@@ -1,0 +1,1006 @@
+INFO - 06/14/22 17:28:10 - 0:00:00 - ============ Initialized logger ============
+INFO - 06/14/22 17:28:10 - 0:00:00 - alpha: 0.5
+                                     batch_size: 16
+                                     bilstm: False
+                                     case_study: False
+                                     ckpt: 
+                                     coach: False
+                                     dropout: 0
+                                     dump_path: experiments/science_pretrain_then_finetune/1
+                                     early_stop: 8
+                                     emb_dim: 300
+                                     emb_file: ../glove/glove.6B.300d.txt
+                                     entity_enc_hidden_dim: 300
+                                     entity_enc_layers: 1
+                                     epoch: 300
+                                     exp_id: 1
+                                     exp_name: science_pretrain_then_finetune
+                                     hidden_dim: 768
+                                     logger_filename: train.log
+                                     lr: 5e-05
+                                     lstm_hidden_dim: 256
+                                     model_name: bert-base-chinese
+                                     n_layer: 2
+                                     num_source_tag: 23
+                                     num_target_tag: 17
+                                     only_index: False
+                                     seed: 555
+                                     source: False
+                                     src_dm: source
+                                     tgt_dm: target
+                                     usechar: False
+INFO - 06/14/22 17:28:10 - 0:00:00 - The experiment will be stored in experiments/science_pretrain_then_finetune/1
+                                     
+INFO - 06/14/22 17:28:10 - 0:00:00 - Load training set data
+INFO - 06/14/22 17:29:00 - 0:00:00 - ============ Initialized logger ============
+INFO - 06/14/22 17:29:00 - 0:00:00 - alpha: 0.5
+                                     batch_size: 16
+                                     bilstm: False
+                                     case_study: False
+                                     ckpt: 
+                                     coach: False
+                                     dropout: 0
+                                     dump_path: experiments/science_pretrain_then_finetune/1
+                                     early_stop: 8
+                                     emb_dim: 300
+                                     emb_file: ../glove/glove.6B.300d.txt
+                                     entity_enc_hidden_dim: 300
+                                     entity_enc_layers: 1
+                                     epoch: 300
+                                     exp_id: 1
+                                     exp_name: science_pretrain_then_finetune
+                                     hidden_dim: 768
+                                     logger_filename: train.log
+                                     lr: 5e-05
+                                     lstm_hidden_dim: 256
+                                     model_name: bert-base-chinese
+                                     n_layer: 2
+                                     num_source_tag: 23
+                                     num_target_tag: 17
+                                     only_index: False
+                                     seed: 555
+                                     source: False
+                                     src_dm: source
+                                     tgt_dm: target
+                                     usechar: False
+INFO - 06/14/22 17:29:00 - 0:00:00 - The experiment will be stored in experiments/science_pretrain_then_finetune/1
+                                     
+INFO - 06/14/22 17:29:00 - 0:00:00 - Load training set data
+INFO - 06/14/22 17:30:12 - 0:00:00 - ============ Initialized logger ============
+INFO - 06/14/22 17:30:12 - 0:00:00 - alpha: 0.5
+                                     batch_size: 16
+                                     bilstm: False
+                                     case_study: False
+                                     ckpt: 
+                                     coach: False
+                                     dropout: 0
+                                     dump_path: experiments/science_pretrain_then_finetune/1
+                                     early_stop: 8
+                                     emb_dim: 300
+                                     emb_file: ../glove/glove.6B.300d.txt
+                                     entity_enc_hidden_dim: 300
+                                     entity_enc_layers: 1
+                                     epoch: 300
+                                     exp_id: 1
+                                     exp_name: science_pretrain_then_finetune
+                                     hidden_dim: 768
+                                     logger_filename: train.log
+                                     lr: 5e-05
+                                     lstm_hidden_dim: 256
+                                     model_name: bert-base-chinese
+                                     n_layer: 2
+                                     num_source_tag: 23
+                                     num_target_tag: 17
+                                     only_index: False
+                                     seed: 555
+                                     source: False
+                                     src_dm: source
+                                     tgt_dm: target
+                                     usechar: False
+INFO - 06/14/22 17:30:12 - 0:00:00 - The experiment will be stored in experiments/science_pretrain_then_finetune/1
+                                     
+INFO - 06/14/22 17:30:12 - 0:00:00 - Load training set data
+INFO - 06/14/22 17:31:53 - 0:00:00 - ============ Initialized logger ============
+INFO - 06/14/22 17:31:53 - 0:00:00 - alpha: 0.5
+                                     batch_size: 16
+                                     bilstm: False
+                                     case_study: False
+                                     ckpt: 
+                                     coach: False
+                                     dropout: 0
+                                     dump_path: experiments/science_pretrain_then_finetune/1
+                                     early_stop: 8
+                                     emb_dim: 300
+                                     emb_file: ../glove/glove.6B.300d.txt
+                                     entity_enc_hidden_dim: 300
+                                     entity_enc_layers: 1
+                                     epoch: 300
+                                     exp_id: 1
+                                     exp_name: science_pretrain_then_finetune
+                                     hidden_dim: 768
+                                     logger_filename: train.log
+                                     lr: 5e-05
+                                     lstm_hidden_dim: 256
+                                     model_name: bert-base-chinese
+                                     n_layer: 2
+                                     num_source_tag: 23
+                                     num_target_tag: 17
+                                     only_index: False
+                                     seed: 555
+                                     source: False
+                                     src_dm: source
+                                     tgt_dm: target
+                                     usechar: False
+INFO - 06/14/22 17:31:53 - 0:00:00 - The experiment will be stored in experiments/science_pretrain_then_finetune/1
+                                     
+INFO - 06/14/22 17:31:53 - 0:00:00 - Load training set data
+INFO - 06/14/22 17:31:53 - 0:00:00 - Load development set data
+INFO - 06/14/22 17:31:53 - 0:00:00 - Load test set data
+INFO - 06/14/22 17:32:39 - 0:00:00 - ============ Initialized logger ============
+INFO - 06/14/22 17:32:39 - 0:00:00 - alpha: 0.5
+                                     batch_size: 16
+                                     bilstm: False
+                                     case_study: False
+                                     ckpt: 
+                                     coach: False
+                                     dropout: 0
+                                     dump_path: experiments/science_pretrain_then_finetune/1
+                                     early_stop: 8
+                                     emb_dim: 300
+                                     emb_file: ../glove/glove.6B.300d.txt
+                                     entity_enc_hidden_dim: 300
+                                     entity_enc_layers: 1
+                                     epoch: 300
+                                     exp_id: 1
+                                     exp_name: science_pretrain_then_finetune
+                                     hidden_dim: 768
+                                     logger_filename: train.log
+                                     lr: 5e-05
+                                     lstm_hidden_dim: 256
+                                     model_name: bert-base-chinese
+                                     n_layer: 2
+                                     num_source_tag: 23
+                                     num_target_tag: 17
+                                     only_index: False
+                                     seed: 555
+                                     source: False
+                                     src_dm: source
+                                     tgt_dm: target
+                                     usechar: False
+INFO - 06/14/22 17:32:39 - 0:00:00 - The experiment will be stored in experiments/science_pretrain_then_finetune/1
+                                     
+INFO - 06/14/22 17:32:39 - 0:00:00 - Load training set data
+INFO - 06/14/22 17:32:40 - 0:00:00 - Load development set data
+INFO - 06/14/22 17:32:40 - 0:00:00 - Load test set data
+INFO - 06/14/22 17:32:40 - 0:00:00 - train size: 50; dev size 0; test size: 0;
+DEBUG - 06/14/22 17:32:40 - 0:00:00 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:32:41 - 0:00:01 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:32:41 - 0:00:01 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:32:42 - 0:00:03 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+INFO - 06/14/22 17:32:57 - 0:00:17 - Training on target domain ...
+INFO - 06/14/22 17:32:57 - 0:00:17 - ============== epoch 0 ==============
+INFO - 06/14/22 17:32:57 - 0:00:18 - Finish training epoch 0. loss: 1.6756
+INFO - 06/14/22 17:32:57 - 0:00:18 - ============== Evaluate epoch 0 on Train Set ==============
+DEBUG - 06/14/22 17:32:57 - 0:00:18 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:33:09 - 0:00:29 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:33:09 - 0:00:29 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:33:10 - 0:00:30 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:33:10 - 0:00:30 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:33:11 - 0:00:31 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:33:11 - 0:00:31 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:33:12 - 0:00:32 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:33:12 - 0:00:32 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:33:13 - 0:00:33 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:33:13 - 0:00:33 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:33:14 - 0:00:34 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:33:14 - 0:00:34 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:33:15 - 0:00:36 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:33:15 - 0:00:36 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:33:16 - 0:00:37 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:33:16 - 0:00:37 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:33:17 - 0:00:38 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 17:33:17 - 0:00:38 - Evaluate on Train Set. Prec: 15.0106 Recall: 23.6667 F1: 18.3700 F1_index: 64.6831 . 
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 省份. Prec: 4.7619 Recall: 4.0000 F1: 4.3478
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 地市. Prec: 19.4805 Recall: 53.5714 F1: 28.5714
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 区县. Prec: 8.6022 Recall: 21.6216 F1: 12.3077
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 路名. Prec: 15.3846 Recall: 36.3636 F1: 21.6216
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 路号. Prec: 37.7778 Recall: 62.9630 F1: 47.2222
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 兴趣点. Prec: 11.2903 Recall: 33.3333 F1: 16.8675
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 乡镇街道. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Index B. Prec: 99.0826 Recall: 72.0000 F1: 83.3977
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Index I. Prec: 87.4384 Recall: 99.8594 F1: 93.2370
+INFO - 06/14/22 17:33:17 - 0:00:38 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:33:17 - 0:00:38 - ============== Evaluate epoch 0 on Dev Set ==============
+INFO - 06/14/22 17:38:06 - 0:00:00 - ============ Initialized logger ============
+INFO - 06/14/22 17:38:06 - 0:00:00 - alpha: 0.5
+                                     batch_size: 16
+                                     bilstm: False
+                                     case_study: False
+                                     ckpt: 
+                                     coach: False
+                                     dropout: 0
+                                     dump_path: experiments/science_pretrain_then_finetune/1
+                                     early_stop: 8
+                                     emb_dim: 300
+                                     emb_file: ../glove/glove.6B.300d.txt
+                                     entity_enc_hidden_dim: 300
+                                     entity_enc_layers: 1
+                                     epoch: 300
+                                     exp_id: 1
+                                     exp_name: science_pretrain_then_finetune
+                                     hidden_dim: 768
+                                     logger_filename: train.log
+                                     lr: 5e-05
+                                     lstm_hidden_dim: 256
+                                     model_name: bert-base-chinese
+                                     n_layer: 2
+                                     num_source_tag: 23
+                                     num_target_tag: 17
+                                     only_index: False
+                                     seed: 555
+                                     source: False
+                                     src_dm: source
+                                     tgt_dm: target
+                                     usechar: False
+INFO - 06/14/22 17:38:06 - 0:00:00 - The experiment will be stored in experiments/science_pretrain_then_finetune/1
+                                     
+INFO - 06/14/22 17:38:06 - 0:00:00 - Load training set data
+INFO - 06/14/22 17:38:06 - 0:00:00 - Load development set data
+INFO - 06/14/22 17:38:06 - 0:00:00 - Load test set data
+INFO - 06/14/22 17:38:06 - 0:00:00 - train size: 50; dev size 0; test size: 0;
+DEBUG - 06/14/22 17:38:06 - 0:00:00 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:38:08 - 0:00:01 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:38:08 - 0:00:01 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:38:09 - 0:00:03 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+INFO - 06/14/22 17:38:23 - 0:00:17 - Training on target domain ...
+INFO - 06/14/22 17:38:23 - 0:00:17 - ============== epoch 0 ==============
+INFO - 06/14/22 17:38:24 - 0:00:17 - Finish training epoch 0. loss: 1.6756
+INFO - 06/14/22 17:38:24 - 0:00:17 - ============== Evaluate epoch 0 on Train Set ==============
+DEBUG - 06/14/22 17:38:24 - 0:00:17 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:38:25 - 0:00:18 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:38:25 - 0:00:18 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:38:26 - 0:00:20 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:38:26 - 0:00:20 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:38:27 - 0:00:21 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:38:27 - 0:00:21 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:38:28 - 0:00:22 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:38:28 - 0:00:22 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:38:29 - 0:00:23 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:38:29 - 0:00:23 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:38:40 - 0:00:34 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:38:40 - 0:00:34 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:38:41 - 0:00:35 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:38:41 - 0:00:35 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:39:02 - 0:00:56 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:39:02 - 0:00:56 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:39:13 - 0:01:07 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 17:39:13 - 0:01:07 - Evaluate on Train Set. Prec: 15.0106 Recall: 23.6667 F1: 18.3700 F1_index: 64.6831 . 
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 省份. Prec: 4.7619 Recall: 4.0000 F1: 4.3478
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 地市. Prec: 19.4805 Recall: 53.5714 F1: 28.5714
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 区县. Prec: 8.6022 Recall: 21.6216 F1: 12.3077
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 路名. Prec: 15.3846 Recall: 36.3636 F1: 21.6216
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 路号. Prec: 37.7778 Recall: 62.9630 F1: 47.2222
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 兴趣点. Prec: 11.2903 Recall: 33.3333 F1: 16.8675
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 乡镇街道. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Index B. Prec: 99.0826 Recall: 72.0000 F1: 83.3977
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Index I. Prec: 87.4384 Recall: 99.8594 F1: 93.2370
+INFO - 06/14/22 17:39:13 - 0:01:07 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:39:13 - 0:01:07 - ============== Evaluate epoch 0 on Dev Set ==============
+INFO - 06/14/22 17:39:13 - 0:01:07 - ============== Evaluate epoch 0 on Test Set ==============
+INFO - 06/14/22 17:40:14 - 0:00:00 - ============ Initialized logger ============
+INFO - 06/14/22 17:40:14 - 0:00:00 - alpha: 0.5
+                                     batch_size: 16
+                                     bilstm: False
+                                     case_study: False
+                                     ckpt: 
+                                     coach: False
+                                     dropout: 0
+                                     dump_path: experiments/science_pretrain_then_finetune/1
+                                     early_stop: 8
+                                     emb_dim: 300
+                                     emb_file: ../glove/glove.6B.300d.txt
+                                     entity_enc_hidden_dim: 300
+                                     entity_enc_layers: 1
+                                     epoch: 300
+                                     exp_id: 1
+                                     exp_name: science_pretrain_then_finetune
+                                     hidden_dim: 768
+                                     logger_filename: train.log
+                                     lr: 5e-05
+                                     lstm_hidden_dim: 256
+                                     model_name: bert-base-chinese
+                                     n_layer: 2
+                                     num_source_tag: 23
+                                     num_target_tag: 17
+                                     only_index: False
+                                     seed: 555
+                                     source: False
+                                     src_dm: source
+                                     tgt_dm: target
+                                     usechar: False
+INFO - 06/14/22 17:40:14 - 0:00:00 - The experiment will be stored in experiments/science_pretrain_then_finetune/1
+                                     
+INFO - 06/14/22 17:40:14 - 0:00:00 - Load training set data
+INFO - 06/14/22 17:40:14 - 0:00:00 - Load development set data
+INFO - 06/14/22 17:40:14 - 0:00:00 - Load test set data
+INFO - 06/14/22 17:40:14 - 0:00:00 - train size: 50; dev size 0; test size: 0;
+DEBUG - 06/14/22 17:40:14 - 0:00:00 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:40:15 - 0:00:01 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:40:15 - 0:00:01 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:40:26 - 0:00:12 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+INFO - 06/14/22 17:40:40 - 0:00:27 - Training on target domain ...
+INFO - 06/14/22 17:40:40 - 0:00:27 - ============== epoch 0 ==============
+INFO - 06/14/22 17:40:41 - 0:00:27 - Finish training epoch 0. loss: 1.6756
+INFO - 06/14/22 17:40:41 - 0:00:27 - ============== Evaluate epoch 0 on Train Set ==============
+DEBUG - 06/14/22 17:40:41 - 0:00:27 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:40:42 - 0:00:28 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:40:42 - 0:00:29 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:40:43 - 0:00:30 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:40:43 - 0:00:30 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:40:44 - 0:00:31 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:40:44 - 0:00:31 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:40:55 - 0:00:42 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:40:55 - 0:00:42 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:40:56 - 0:00:43 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:40:56 - 0:00:43 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:40:57 - 0:00:44 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:40:57 - 0:00:44 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:40:59 - 0:00:45 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:40:59 - 0:00:45 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:00 - 0:00:46 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:00 - 0:00:46 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:01 - 0:00:47 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 17:41:01 - 0:00:47 - Evaluate on Train Set. Prec: 15.0106 Recall: 23.6667 F1: 18.3700 F1_index: 64.6831 . 
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 省份. Prec: 4.7619 Recall: 4.0000 F1: 4.3478
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 地市. Prec: 19.4805 Recall: 53.5714 F1: 28.5714
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 区县. Prec: 8.6022 Recall: 21.6216 F1: 12.3077
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 路名. Prec: 15.3846 Recall: 36.3636 F1: 21.6216
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 路号. Prec: 37.7778 Recall: 62.9630 F1: 47.2222
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 兴趣点. Prec: 11.2903 Recall: 33.3333 F1: 16.8675
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 乡镇街道. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Index B. Prec: 99.0826 Recall: 72.0000 F1: 83.3977
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Index I. Prec: 87.4384 Recall: 99.8594 F1: 93.2370
+INFO - 06/14/22 17:41:01 - 0:00:47 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:01 - 0:00:47 - ============== Evaluate epoch 0 on Dev Set ==============
+INFO - 06/14/22 17:41:01 - 0:00:47 - ============== Evaluate epoch 0 on Test Set ==============
+INFO - 06/14/22 17:41:01 - 0:00:47 - ============== epoch 1 ==============
+INFO - 06/14/22 17:41:01 - 0:00:48 - Finish training epoch 1. loss: 1.1105
+INFO - 06/14/22 17:41:01 - 0:00:48 - ============== Evaluate epoch 1 on Train Set ==============
+DEBUG - 06/14/22 17:41:01 - 0:00:48 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:02 - 0:00:49 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:02 - 0:00:49 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:03 - 0:00:50 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:03 - 0:00:50 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:04 - 0:00:51 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:04 - 0:00:51 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:06 - 0:00:52 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:06 - 0:00:52 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:07 - 0:00:53 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:07 - 0:00:53 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:08 - 0:00:54 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:41:08 - 0:00:54 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:09 - 0:00:55 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:41:09 - 0:00:55 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:10 - 0:00:56 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:10 - 0:00:56 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:11 - 0:00:57 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 17:41:11 - 0:00:57 - Evaluate on Train Set. Prec: 42.8977 Recall: 50.3333 F1: 46.3190 F1_index: 78.8344 . 
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 区县. Prec: 51.6667 Recall: 83.7838 F1: 63.9175
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 乡镇街道. Prec: 12.5000 Recall: 11.5385 F1: 12.0000
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 路名. Prec: 35.4430 Recall: 63.6364 F1: 45.5285
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 路号. Prec: 45.4545 Recall: 74.0741 F1: 56.3380
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 省份. Prec: 92.3077 Recall: 96.0000 F1: 94.1176
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 地市. Prec: 62.5000 Recall: 71.4286 F1: 66.6667
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 兴趣点. Prec: 28.7356 Recall: 59.5238 F1: 38.7597
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Index B. Prec: 98.4674 Recall: 85.6667 F1: 91.6221
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Index I. Prec: 92.0676 Recall: 99.5781 F1: 95.6757
+INFO - 06/14/22 17:41:11 - 0:00:57 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:11 - 0:00:57 - ============== Evaluate epoch 1 on Dev Set ==============
+INFO - 06/14/22 17:41:11 - 0:00:57 - ============== Evaluate epoch 1 on Test Set ==============
+INFO - 06/14/22 17:41:11 - 0:00:57 - ============== epoch 2 ==============
+INFO - 06/14/22 17:41:12 - 0:00:58 - Finish training epoch 2. loss: 0.8071
+INFO - 06/14/22 17:41:12 - 0:00:58 - ============== Evaluate epoch 2 on Train Set ==============
+DEBUG - 06/14/22 17:41:12 - 0:00:58 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:13 - 0:00:59 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:13 - 0:00:59 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:14 - 0:01:00 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:14 - 0:01:00 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:15 - 0:01:01 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:15 - 0:01:01 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:16 - 0:01:02 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:16 - 0:01:02 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:27 - 0:01:13 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:27 - 0:01:13 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:28 - 0:01:14 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:41:28 - 0:01:14 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:29 - 0:01:15 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:41:29 - 0:01:16 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:30 - 0:01:17 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:30 - 0:01:17 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:31 - 0:01:18 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 17:41:32 - 0:01:18 - Evaluate on Train Set. Prec: 52.2346 Recall: 62.3333 F1: 56.8389 F1_index: 82.6748 . 
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 省份. Prec: 85.7143 Recall: 96.0000 F1: 90.5660
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 地市. Prec: 77.7778 Recall: 100.0000 F1: 87.5000
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 区县. Prec: 73.1707 Recall: 81.0811 F1: 76.9231
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 路名. Prec: 54.3860 Recall: 70.4545 F1: 61.3861
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 路号. Prec: 48.9362 Recall: 85.1852 F1: 62.1622
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 兴趣点. Prec: 47.7612 Recall: 76.1905 F1: 58.7156
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 乡镇街道. Prec: 33.3333 Recall: 69.2308 F1: 45.0000
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 房屋编号. Prec: 6.2500 Recall: 7.6923 F1: 6.8966
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Index B. Prec: 98.2206 Recall: 92.0000 F1: 95.0086
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Index I. Prec: 94.3925 Recall: 99.4374 F1: 96.8493
+INFO - 06/14/22 17:41:32 - 0:01:18 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:32 - 0:01:18 - ============== Evaluate epoch 2 on Dev Set ==============
+INFO - 06/14/22 17:41:32 - 0:01:18 - ============== Evaluate epoch 2 on Test Set ==============
+INFO - 06/14/22 17:41:32 - 0:01:18 - ============== epoch 3 ==============
+INFO - 06/14/22 17:41:32 - 0:01:19 - Finish training epoch 3. loss: 0.5707
+INFO - 06/14/22 17:41:32 - 0:01:19 - ============== Evaluate epoch 3 on Train Set ==============
+DEBUG - 06/14/22 17:41:32 - 0:01:19 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:33 - 0:01:20 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:33 - 0:01:20 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:34 - 0:01:21 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:34 - 0:01:21 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:35 - 0:01:22 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:35 - 0:01:22 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:36 - 0:01:23 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:36 - 0:01:23 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:47 - 0:01:34 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:47 - 0:01:34 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:48 - 0:01:35 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:41:49 - 0:01:35 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:50 - 0:01:36 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:41:50 - 0:01:36 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:51 - 0:01:37 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:41:51 - 0:01:37 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:41:52 - 0:01:38 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 17:41:52 - 0:01:38 - Evaluate on Train Set. Prec: 61.0028 Recall: 73.0000 F1: 66.4643 F1_index: 86.1912 . 
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 省份. Prec: 85.7143 Recall: 96.0000 F1: 90.5660
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 地市. Prec: 96.5517 Recall: 100.0000 F1: 98.2456
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 区县. Prec: 92.3077 Recall: 97.2973 F1: 94.7368
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 路名. Prec: 71.4286 Recall: 90.9091 F1: 80.0000
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 路号. Prec: 59.5238 Recall: 92.5926 F1: 72.4638
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 兴趣点. Prec: 53.2258 Recall: 78.5714 F1: 63.4615
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 乡镇街道. Prec: 46.6667 Recall: 80.7692 F1: 59.1549
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 行政村或社区. Prec: 23.0769 Recall: 27.2727 F1: 25.0000
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 房屋编号. Prec: 21.4286 Recall: 23.0769 F1: 22.2222
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 单元号. Prec: 12.5000 Recall: 16.6667 F1: 14.2857
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 楼层号. Prec: 50.0000 Recall: 50.0000 F1: 50.0000
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 方位. Prec: 20.0000 Recall: 11.1111 F1: 14.2857
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Index B. Prec: 98.3051 Recall: 96.6667 F1: 97.4790
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Index I. Prec: 96.3265 Recall: 99.5781 F1: 97.9253
+INFO - 06/14/22 17:41:52 - 0:01:38 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:41:52 - 0:01:38 - ============== Evaluate epoch 3 on Dev Set ==============
+INFO - 06/14/22 17:41:52 - 0:01:38 - ============== Evaluate epoch 3 on Test Set ==============
+INFO - 06/14/22 17:41:52 - 0:01:38 - ============== epoch 4 ==============
+INFO - 06/14/22 17:41:53 - 0:01:39 - Finish training epoch 4. loss: 0.4142
+INFO - 06/14/22 17:41:53 - 0:01:39 - ============== Evaluate epoch 4 on Train Set ==============
+DEBUG - 06/14/22 17:41:53 - 0:01:39 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:04 - 0:01:50 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:04 - 0:01:50 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:05 - 0:01:51 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:05 - 0:01:51 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:06 - 0:01:52 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:06 - 0:01:52 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:07 - 0:01:53 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:07 - 0:01:53 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:08 - 0:01:54 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:08 - 0:01:54 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:10 - 0:01:57 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:42:10 - 0:01:57 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:11 - 0:01:58 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:42:11 - 0:01:58 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:22 - 0:02:09 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:22 - 0:02:09 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:23 - 0:02:10 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 17:42:24 - 0:02:10 - Evaluate on Train Set. Prec: 71.4286 Recall: 81.6667 F1: 76.2053 F1_index: 91.1353 . 
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 路名. Prec: 78.1818 Recall: 97.7273 F1: 86.8687
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 路号. Prec: 66.6667 Recall: 96.2963 F1: 78.7879
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 兴趣点. Prec: 61.4035 Recall: 83.3333 F1: 70.7071
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 子兴趣点. Prec: 20.0000 Recall: 12.5000 F1: 15.3846
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 省份. Prec: 92.5926 Recall: 100.0000 F1: 96.1538
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 地市. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 区县. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 乡镇街道. Prec: 72.2222 Recall: 100.0000 F1: 83.8710
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 楼层号. Prec: 55.5556 Recall: 62.5000 F1: 58.8235
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 方位. Prec: 60.0000 Recall: 33.3333 F1: 42.8571
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 房屋编号. Prec: 25.0000 Recall: 30.7692 F1: 27.5862
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 单元号. Prec: 44.4444 Recall: 66.6667 F1: 53.3333
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 行政村或社区. Prec: 70.0000 Recall: 63.6364 F1: 66.6667
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 村子组别. Prec: 33.3333 Recall: 33.3333 F1: 33.3333
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Index B. Prec: 97.6898 Recall: 98.6667 F1: 98.1758
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Index I. Prec: 97.9282 Recall: 99.7187 F1: 98.8153
+INFO - 06/14/22 17:42:24 - 0:02:10 - Entity Index O. Prec: 100.0000 Recall: 15.7895 F1: 27.2727
+INFO - 06/14/22 17:42:24 - 0:02:10 - ============== Evaluate epoch 4 on Dev Set ==============
+INFO - 06/14/22 17:42:24 - 0:02:10 - ============== Evaluate epoch 4 on Test Set ==============
+INFO - 06/14/22 17:42:24 - 0:02:10 - ============== epoch 5 ==============
+INFO - 06/14/22 17:42:24 - 0:02:11 - Finish training epoch 5. loss: 0.2998
+INFO - 06/14/22 17:42:24 - 0:02:11 - ============== Evaluate epoch 5 on Train Set ==============
+DEBUG - 06/14/22 17:42:24 - 0:02:11 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:25 - 0:02:12 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:25 - 0:02:12 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:26 - 0:02:13 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:27 - 0:02:13 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:28 - 0:02:14 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:28 - 0:02:14 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:29 - 0:02:15 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:29 - 0:02:15 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:30 - 0:02:16 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:30 - 0:02:16 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:31 - 0:02:17 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:42:31 - 0:02:17 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:32 - 0:02:18 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:42:32 - 0:02:18 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:33 - 0:02:19 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:33 - 0:02:19 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:34 - 0:02:20 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 17:42:34 - 0:02:20 - Evaluate on Train Set. Prec: 76.7164 Recall: 85.6667 F1: 80.9449 F1_index: 92.5984 . 
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 省份. Prec: 96.1538 Recall: 100.0000 F1: 98.0392
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 地市. Prec: 93.3333 Recall: 100.0000 F1: 96.5517
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 区县. Prec: 94.5946 Recall: 94.5946 F1: 94.5946
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 行政村或社区. Prec: 90.0000 Recall: 81.8182 F1: 85.7143
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 村子组别. Prec: 66.6667 Recall: 66.6667 F1: 66.6667
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 房屋编号. Prec: 40.0000 Recall: 46.1538 F1: 42.8571
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 兴趣点. Prec: 75.5102 Recall: 88.0952 F1: 81.3187
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 路名. Prec: 84.6154 Recall: 100.0000 F1: 91.6667
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 路号. Prec: 70.2703 Recall: 96.2963 F1: 81.2500
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 单元号. Prec: 40.0000 Recall: 66.6667 F1: 50.0000
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 楼层号. Prec: 50.0000 Recall: 62.5000 F1: 55.5556
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 乡镇街道. Prec: 78.7879 Recall: 100.0000 F1: 88.1356
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 路口. Prec: 25.0000 Recall: 20.0000 F1: 22.2222
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 方位. Prec: 85.7143 Recall: 66.6667 F1: 75.0000
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 子兴趣点. Prec: 33.3333 Recall: 25.0000 F1: 28.5714
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 开发区. Prec: 20.0000 Recall: 20.0000 F1: 20.0000
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Index B. Prec: 98.0198 Recall: 99.0000 F1: 98.5075
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Index I. Prec: 98.6111 Recall: 99.8594 F1: 99.2313
+INFO - 06/14/22 17:42:34 - 0:02:20 - Entity Index O. Prec: 100.0000 Recall: 36.8421 F1: 53.8462
+INFO - 06/14/22 17:42:34 - 0:02:20 - ============== Evaluate epoch 5 on Dev Set ==============
+INFO - 06/14/22 17:42:34 - 0:02:20 - ============== Evaluate epoch 5 on Test Set ==============
+INFO - 06/14/22 17:42:34 - 0:02:20 - ============== epoch 6 ==============
+INFO - 06/14/22 17:42:35 - 0:02:21 - Finish training epoch 6. loss: 0.2321
+INFO - 06/14/22 17:42:35 - 0:02:21 - ============== Evaluate epoch 6 on Train Set ==============
+DEBUG - 06/14/22 17:42:35 - 0:02:21 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:36 - 0:02:22 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:36 - 0:02:22 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:37 - 0:02:23 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:37 - 0:02:23 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:38 - 0:02:24 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:38 - 0:02:24 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:49 - 0:02:35 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:49 - 0:02:35 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:50 - 0:02:36 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:50 - 0:02:36 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:51 - 0:02:37 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:42:51 - 0:02:37 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:52 - 0:02:38 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:42:52 - 0:02:38 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:53 - 0:02:40 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:53 - 0:02:40 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:54 - 0:02:41 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 17:42:54 - 0:02:41 - Evaluate on Train Set. Prec: 80.5389 Recall: 89.6667 F1: 84.8580 F1_index: 93.0599 . 
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 路名. Prec: 91.4894 Recall: 97.7273 F1: 94.5055
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 路口. Prec: 75.0000 Recall: 60.0000 F1: 66.6667
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 方位. Prec: 88.8889 Recall: 88.8889 F1: 88.8889
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 距离. Prec: 33.3333 Recall: 33.3333 F1: 33.3333
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 兴趣点. Prec: 76.0000 Recall: 90.4762 F1: 82.6087
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 子兴趣点. Prec: 30.0000 Recall: 37.5000 F1: 33.3333
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 省份. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 地市. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 区县. Prec: 94.7368 Recall: 97.2973 F1: 96.0000
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 路号. Prec: 79.4118 Recall: 100.0000 F1: 88.5246
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 乡镇街道. Prec: 76.4706 Recall: 100.0000 F1: 86.6667
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 行政村或社区. Prec: 90.0000 Recall: 81.8182 F1: 85.7143
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 房屋编号. Prec: 50.0000 Recall: 53.8462 F1: 51.8519
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 单元号. Prec: 50.0000 Recall: 66.6667 F1: 57.1429
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 楼层号. Prec: 66.6667 Recall: 100.0000 F1: 80.0000
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 村子组别. Prec: 66.6667 Recall: 66.6667 F1: 66.6667
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Type 开发区. Prec: 20.0000 Recall: 20.0000 F1: 20.0000
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Index B. Prec: 98.6799 Recall: 99.6667 F1: 99.1708
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Index I. Prec: 99.0251 Recall: 100.0000 F1: 99.5101
+INFO - 06/14/22 17:42:54 - 0:02:41 - Entity Index O. Prec: 100.0000 Recall: 47.3684 F1: 64.2857
+INFO - 06/14/22 17:42:54 - 0:02:41 - ============== Evaluate epoch 6 on Dev Set ==============
+INFO - 06/14/22 17:42:54 - 0:02:41 - ============== Evaluate epoch 6 on Test Set ==============
+INFO - 06/14/22 17:42:54 - 0:02:41 - ============== epoch 7 ==============
+INFO - 06/14/22 17:42:55 - 0:02:41 - Finish training epoch 7. loss: 0.1868
+INFO - 06/14/22 17:42:55 - 0:02:42 - ============== Evaluate epoch 7 on Train Set ==============
+DEBUG - 06/14/22 17:42:55 - 0:02:42 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:56 - 0:02:43 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:56 - 0:02:43 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:57 - 0:02:44 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:57 - 0:02:44 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:58 - 0:02:45 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:58 - 0:02:45 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:42:59 - 0:02:46 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:42:59 - 0:02:46 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:00 - 0:02:47 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:00 - 0:02:47 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:01 - 0:02:48 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:43:02 - 0:02:48 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:03 - 0:02:49 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:43:03 - 0:02:49 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:04 - 0:02:50 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:04 - 0:02:50 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:05 - 0:02:51 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 17:43:05 - 0:02:51 - Evaluate on Train Set. Prec: 91.9872 Recall: 95.6667 F1: 93.7908 F1_index: 97.3856 . 
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 省份. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 地市. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 区县. Prec: 100.0000 Recall: 97.2973 F1: 98.6301
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 乡镇街道. Prec: 86.6667 Recall: 100.0000 F1: 92.8571
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 开发区. Prec: 80.0000 Recall: 80.0000 F1: 80.0000
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 路名. Prec: 97.7778 Recall: 100.0000 F1: 98.8764
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 路号. Prec: 93.1034 Recall: 100.0000 F1: 96.4286
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 兴趣点. Prec: 88.8889 Recall: 95.2381 F1: 91.9540
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 楼层号. Prec: 72.7273 Recall: 100.0000 F1: 84.2105
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 行政村或社区. Prec: 100.0000 Recall: 90.9091 F1: 95.2381
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 村子组别. Prec: 66.6667 Recall: 66.6667 F1: 66.6667
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 房屋编号. Prec: 75.0000 Recall: 92.3077 F1: 82.7586
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 子兴趣点. Prec: 71.4286 Recall: 62.5000 F1: 66.6667
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 方位. Prec: 100.0000 Recall: 88.8889 F1: 94.1176
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 单元号. Prec: 83.3333 Recall: 83.3333 F1: 83.3333
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 路口. Prec: 80.0000 Recall: 80.0000 F1: 80.0000
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Type 距离. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Index B. Prec: 98.6842 Recall: 100.0000 F1: 99.3377
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Index I. Prec: 99.7195 Recall: 100.0000 F1: 99.8596
+INFO - 06/14/22 17:43:05 - 0:02:51 - Entity Index O. Prec: 100.0000 Recall: 68.4211 F1: 81.2500
+INFO - 06/14/22 17:43:05 - 0:02:51 - ============== Evaluate epoch 7 on Dev Set ==============
+INFO - 06/14/22 17:43:05 - 0:02:51 - ============== Evaluate epoch 7 on Test Set ==============
+INFO - 06/14/22 17:43:05 - 0:02:51 - ============== epoch 8 ==============
+INFO - 06/14/22 17:43:06 - 0:02:52 - Finish training epoch 8. loss: 0.1342
+INFO - 06/14/22 17:43:06 - 0:02:52 - ============== Evaluate epoch 8 on Train Set ==============
+DEBUG - 06/14/22 17:43:06 - 0:02:52 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:07 - 0:02:53 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:07 - 0:02:53 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:08 - 0:02:54 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:08 - 0:02:54 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:09 - 0:02:55 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:09 - 0:02:55 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:10 - 0:02:56 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:10 - 0:02:56 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:11 - 0:02:57 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:11 - 0:02:57 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:12 - 0:02:58 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:43:12 - 0:02:58 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:13 - 0:02:59 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:43:13 - 0:02:59 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:14 - 0:03:00 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:14 - 0:03:00 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:25 - 0:03:11 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 17:43:25 - 0:03:12 - Evaluate on Train Set. Prec: 92.5806 Recall: 95.6667 F1: 94.0984 F1_index: 97.7049 . 
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 省份. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 地市. Prec: 96.5517 Recall: 100.0000 F1: 98.2456
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 区县. Prec: 89.7436 Recall: 94.5946 F1: 92.1053
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 兴趣点. Prec: 95.2381 Recall: 95.2381 F1: 95.2381
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 乡镇街道. Prec: 85.7143 Recall: 92.3077 F1: 88.8889
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 开发区. Prec: 80.0000 Recall: 80.0000 F1: 80.0000
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 路名. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 路号. Prec: 96.4286 Recall: 100.0000 F1: 98.1818
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 楼层号. Prec: 88.8889 Recall: 100.0000 F1: 94.1176
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 方位. Prec: 100.0000 Recall: 88.8889 F1: 94.1176
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 行政村或社区. Prec: 83.3333 Recall: 90.9091 F1: 86.9565
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 房屋编号. Prec: 75.0000 Recall: 92.3077 F1: 82.7586
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 单元号. Prec: 83.3333 Recall: 83.3333 F1: 83.3333
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 村子组别. Prec: 66.6667 Recall: 66.6667 F1: 66.6667
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 子兴趣点. Prec: 87.5000 Recall: 87.5000 F1: 87.5000
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 路口. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Type 距离. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Index B. Prec: 99.3377 Recall: 100.0000 F1: 99.6678
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Index I. Prec: 99.7195 Recall: 100.0000 F1: 99.8596
+INFO - 06/14/22 17:43:25 - 0:03:12 - Entity Index O. Prec: 100.0000 Recall: 78.9474 F1: 88.2353
+INFO - 06/14/22 17:43:25 - 0:03:12 - ============== Evaluate epoch 8 on Dev Set ==============
+INFO - 06/14/22 17:43:25 - 0:03:12 - ============== Evaluate epoch 8 on Test Set ==============
+INFO - 06/14/22 17:43:25 - 0:03:12 - ============== epoch 9 ==============
+INFO - 06/14/22 17:43:26 - 0:03:12 - Finish training epoch 9. loss: 0.1064
+INFO - 06/14/22 17:43:26 - 0:03:12 - ============== Evaluate epoch 9 on Train Set ==============
+DEBUG - 06/14/22 17:43:26 - 0:03:12 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:27 - 0:03:13 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:27 - 0:03:13 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:28 - 0:03:14 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:28 - 0:03:14 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:29 - 0:03:15 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:29 - 0:03:15 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:30 - 0:03:16 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:30 - 0:03:16 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:31 - 0:03:17 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:31 - 0:03:17 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:32 - 0:03:19 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:43:32 - 0:03:19 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:43 - 0:03:30 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:43:43 - 0:03:30 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:44 - 0:03:31 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:44 - 0:03:31 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:45 - 0:03:32 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 17:43:46 - 0:03:32 - Evaluate on Train Set. Prec: 95.7516 Recall: 97.6667 F1: 96.6997 F1_index: 98.6799 . 
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 乡镇街道. Prec: 92.8571 Recall: 100.0000 F1: 96.2963
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 兴趣点. Prec: 91.1111 Recall: 97.6190 F1: 94.2529
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 路名. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 路号. Prec: 96.4286 Recall: 100.0000 F1: 98.1818
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 区县. Prec: 97.2973 Recall: 97.2973 F1: 97.2973
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 路口. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 方位. Prec: 100.0000 Recall: 88.8889 F1: 94.1176
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 省份. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 地市. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 房屋编号. Prec: 92.3077 Recall: 92.3077 F1: 92.3077
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 楼层号. Prec: 88.8889 Recall: 100.0000 F1: 94.1176
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 行政村或社区. Prec: 90.9091 Recall: 90.9091 F1: 90.9091
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 距离. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 子兴趣点. Prec: 75.0000 Recall: 75.0000 F1: 75.0000
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 单元号. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 开发区. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Type 村子组别. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Index B. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Index I. Prec: 99.8596 Recall: 100.0000 F1: 99.9297
+INFO - 06/14/22 17:43:46 - 0:03:32 - Entity Index O. Prec: 100.0000 Recall: 94.7368 F1: 97.2973
+INFO - 06/14/22 17:43:46 - 0:03:32 - ============== Evaluate epoch 9 on Dev Set ==============
+INFO - 06/14/22 17:43:46 - 0:03:32 - ============== Evaluate epoch 9 on Test Set ==============
+INFO - 06/14/22 17:43:46 - 0:03:32 - ============== epoch 10 ==============
+INFO - 06/14/22 17:43:46 - 0:03:32 - Finish training epoch 10. loss: 0.0937
+INFO - 06/14/22 17:43:46 - 0:03:32 - ============== Evaluate epoch 10 on Train Set ==============
+DEBUG - 06/14/22 17:43:46 - 0:03:32 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:47 - 0:03:33 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:47 - 0:03:34 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:48 - 0:03:35 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:48 - 0:03:35 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:49 - 0:03:36 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:49 - 0:03:36 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:50 - 0:03:37 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:50 - 0:03:37 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:51 - 0:03:38 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:51 - 0:03:38 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:52 - 0:03:39 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:43:52 - 0:03:39 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:54 - 0:03:40 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 17:43:54 - 0:03:40 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:55 - 0:03:41 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:55 - 0:03:41 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:56 - 0:03:42 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 17:43:56 - 0:03:42 - Evaluate on Train Set. Prec: 98.6711 Recall: 99.0000 F1: 98.8353 F1_index: 99.1681 . 
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 省份. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 地市. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 区县. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 路名. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 兴趣点. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 行政村或社区. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 村子组别. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 房屋编号. Prec: 92.3077 Recall: 92.3077 F1: 92.3077
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 路号. Prec: 96.4286 Recall: 100.0000 F1: 98.1818
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 子兴趣点. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 乡镇街道. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 开发区. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 方位. Prec: 100.0000 Recall: 88.8889 F1: 94.1176
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 楼层号. Prec: 77.7778 Recall: 87.5000 F1: 82.3529
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 路口. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 距离. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Type 单元号. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Index B. Prec: 100.0000 Recall: 100.0000 F1: 100.0000
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Index I. Prec: 99.8596 Recall: 100.0000 F1: 99.9297
+INFO - 06/14/22 17:43:56 - 0:03:42 - Entity Index O. Prec: 100.0000 Recall: 94.7368 F1: 97.2973
+INFO - 06/14/22 17:43:56 - 0:03:42 - ============== Evaluate epoch 10 on Dev Set ==============
+INFO - 06/14/22 17:43:56 - 0:03:42 - ============== Evaluate epoch 10 on Test Set ==============
+INFO - 06/14/22 17:43:56 - 0:03:42 - ============== epoch 11 ==============
+INFO - 06/14/22 17:43:57 - 0:03:43 - Finish training epoch 11. loss: 0.0596
+INFO - 06/14/22 17:43:57 - 0:03:43 - ============== Evaluate epoch 11 on Train Set ==============
+DEBUG - 06/14/22 17:43:57 - 0:03:43 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:58 - 0:03:44 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:58 - 0:03:44 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 17:43:59 - 0:03:45 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 17:43:59 - 0:03:45 - Starting new HTTPS connection (1): huggingface.co:443
+INFO - 06/14/22 19:31:10 - 0:00:00 - ============ Initialized logger ============
+INFO - 06/14/22 19:31:10 - 0:00:00 - alpha: 0.5
+                                     batch_size: 16
+                                     bilstm: False
+                                     case_study: False
+                                     ckpt: 
+                                     coach: False
+                                     dropout: 0
+                                     dump_path: experiments/science_pretrain_then_finetune/1
+                                     early_stop: 8
+                                     emb_dim: 300
+                                     emb_file: ../glove/glove.6B.300d.txt
+                                     entity_enc_hidden_dim: 300
+                                     entity_enc_layers: 1
+                                     epoch: 300
+                                     exp_id: 1
+                                     exp_name: science_pretrain_then_finetune
+                                     hidden_dim: 768
+                                     logger_filename: train.log
+                                     lr: 5e-05
+                                     lstm_hidden_dim: 256
+                                     model_name: bert-base-chinese
+                                     n_layer: 2
+                                     num_source_tag: 23
+                                     num_target_tag: 17
+                                     only_index: False
+                                     seed: 555
+                                     source: True
+                                     src_dm: source
+                                     tgt_dm: target
+                                     usechar: False
+INFO - 06/14/22 19:31:10 - 0:00:00 - The experiment will be stored in experiments/science_pretrain_then_finetune/1
+                                     
+INFO - 06/14/22 19:31:10 - 0:00:00 - Load training set data
+INFO - 06/14/22 19:31:10 - 0:00:00 - Load development set data
+INFO - 06/14/22 19:31:10 - 0:00:00 - Load test set data
+INFO - 06/14/22 20:24:19 - 0:00:00 - ============ Initialized logger ============
+INFO - 06/14/22 20:24:19 - 0:00:00 - alpha: 0.5
+                                     batch_size: 16
+                                     bilstm: False
+                                     case_study: False
+                                     ckpt: 
+                                     coach: False
+                                     dropout: 0
+                                     dump_path: experiments/science_pretrain_then_finetune/1
+                                     early_stop: 8
+                                     emb_dim: 300
+                                     emb_file: ../glove/glove.6B.300d.txt
+                                     entity_enc_hidden_dim: 300
+                                     entity_enc_layers: 1
+                                     epoch: 300
+                                     exp_id: 1
+                                     exp_name: science_pretrain_then_finetune
+                                     hidden_dim: 768
+                                     logger_filename: train.log
+                                     lr: 5e-05
+                                     lstm_hidden_dim: 256
+                                     model_name: bert-base-chinese
+                                     n_layer: 2
+                                     num_source_tag: 23
+                                     num_target_tag: 17
+                                     only_index: False
+                                     seed: 555
+                                     source: False
+                                     src_dm: source
+                                     tgt_dm: target
+                                     usechar: False
+INFO - 06/14/22 20:24:19 - 0:00:00 - The experiment will be stored in experiments/science_pretrain_then_finetune/1
+                                     
+INFO - 06/14/22 20:24:19 - 0:00:00 - Load training set data
+INFO - 06/14/22 20:24:20 - 0:00:00 - Load development set data
+INFO - 06/14/22 20:24:20 - 0:00:00 - Load test set data
+INFO - 06/14/22 20:24:33 - 0:00:13 - train size: 50; dev size 0; test size: 4000;
+DEBUG - 06/14/22 20:24:33 - 0:00:13 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:24:34 - 0:00:14 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 20:24:34 - 0:00:14 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:24:35 - 0:00:16 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+INFO - 06/14/22 20:24:50 - 0:00:31 - Training on target domain ...
+INFO - 06/14/22 20:24:50 - 0:00:31 - ============== epoch 0 ==============
+INFO - 06/14/22 20:24:51 - 0:00:31 - Finish training epoch 0. loss: 1.7408
+INFO - 06/14/22 20:24:51 - 0:00:31 - ============== Evaluate epoch 0 on Train Set ==============
+DEBUG - 06/14/22 20:24:51 - 0:00:31 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:24:52 - 0:00:33 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 20:24:52 - 0:00:33 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:03 - 0:00:44 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 20:25:03 - 0:00:44 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:04 - 0:00:45 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 20:25:04 - 0:00:45 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:05 - 0:00:46 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 20:25:05 - 0:00:46 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:06 - 0:00:47 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 20:25:06 - 0:00:47 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:07 - 0:00:48 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 20:25:07 - 0:00:48 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:08 - 0:00:49 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 20:25:08 - 0:00:49 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:09 - 0:00:50 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 20:25:09 - 0:00:50 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:10 - 0:00:51 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 20:25:11 - 0:00:51 - Evaluate on Train Set. Prec: 13.4454 Recall: 21.3333 F1: 16.4948 F1_index: 63.6598 . 
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 地市. Prec: 16.0000 Recall: 42.8571 F1: 23.3010
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 区县. Prec: 5.6338 Recall: 10.8108 F1: 7.4074
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 乡镇街道. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 路名. Prec: 11.8182 Recall: 29.5455 F1: 16.8831
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 路号. Prec: 38.2979 Recall: 66.6667 F1: 48.6486
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 省份. Prec: 10.0000 Recall: 12.0000 F1: 10.9091
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 兴趣点. Prec: 10.0719 Recall: 33.3333 F1: 15.4696
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Index B. Prec: 98.3871 Recall: 61.0000 F1: 75.3086
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Index I. Prec: 83.8863 Recall: 99.5781 F1: 91.0611
+INFO - 06/14/22 20:25:11 - 0:00:51 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:11 - 0:00:51 - ============== Evaluate epoch 0 on Dev Set ==============
+INFO - 06/14/22 20:25:11 - 0:00:51 - ============== Evaluate epoch 0 on Test Set ==============
+DEBUG - 06/14/22 20:25:11 - 0:00:51 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:12 - 0:00:52 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 20:25:12 - 0:00:52 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:13 - 0:00:53 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 20:25:13 - 0:00:53 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:14 - 0:00:54 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 20:25:14 - 0:00:54 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:15 - 0:00:55 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/vocab.txt HTTP/1.1" 200 0
+DEBUG - 06/14/22 20:25:15 - 0:00:55 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:16 - 0:00:57 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 20:25:16 - 0:00:57 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:17 - 0:00:58 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/added_tokens.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 20:25:17 - 0:00:58 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:18 - 0:00:59 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/special_tokens_map.json HTTP/1.1" 404 0
+DEBUG - 06/14/22 20:25:18 - 0:00:59 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:19 - 0:01:00 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+DEBUG - 06/14/22 20:25:19 - 0:01:00 - Starting new HTTPS connection (1): huggingface.co:443
+DEBUG - 06/14/22 20:25:20 - 0:01:01 - https://huggingface.co:443 "HEAD /bert-base-chinese/resolve/main/config.json HTTP/1.1" 200 0
+INFO - 06/14/22 20:25:34 - 0:01:15 - Evaluate on Test Set. Prec: 9.6322 Recall: 15.2869 F1: 11.8180 F1_index: 59.3355 . 
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 乡镇街道. Prec: 0.8475 Recall: 0.0998 F1: 0.1786
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 兴趣点. Prec: 5.6250 Recall: 20.9233 F1: 8.8664
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 路名. Prec: 6.5641 Recall: 19.8233 F1: 9.8624
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 路号. Prec: 37.0840 Recall: 69.5624 F1: 48.3777
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 区县. Prec: 4.3037 Recall: 7.0941 F1: 5.3574
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 地市. Prec: 14.9378 Recall: 28.8770 F1: 19.6901
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 省份. Prec: 4.6767 Recall: 4.0785 F1: 4.3572
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Index B. Prec: 97.0867 Recall: 51.1930 F1: 67.0376
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Index I. Prec: 80.8953 Recall: 99.4062 F1: 89.2005
+INFO - 06/14/22 20:25:34 - 0:01:15 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:25:45 - 0:01:26 - Found better model!!

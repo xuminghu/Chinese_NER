@@ -1,0 +1,873 @@
+nohup: ignoring input
+INFO - 06/14/22 19:32:24 - 0:00:00 - ============ Initialized logger ============
+INFO - 06/14/22 19:32:24 - 0:00:00 - alpha: 0.5
+                                     batch_size: 16
+                                     bilstm: False
+                                     case_study: False
+                                     ckpt: 
+                                     coach: False
+                                     dropout: 0
+                                     dump_path: experiments/default/1
+                                     early_stop: 8
+                                     emb_dim: 300
+                                     emb_file: ../glove/glove.6B.300d.txt
+                                     entity_enc_hidden_dim: 300
+                                     entity_enc_layers: 1
+                                     epoch: 300
+                                     exp_id: 1
+                                     exp_name: default
+                                     hidden_dim: 768
+                                     logger_filename: train.log
+                                     lr: 5e-05
+                                     lstm_hidden_dim: 256
+                                     model_name: bert-base-cased
+                                     n_layer: 2
+                                     num_source_tag: 23
+                                     num_target_tag: 17
+                                     only_index: False
+                                     seed: 555
+                                     source: False
+                                     src_dm: source
+                                     tgt_dm: target
+                                     usechar: False
+INFO - 06/14/22 19:32:24 - 0:00:00 - The experiment will be stored in experiments/default/1
+                                     
+INFO - 06/14/22 19:32:24 - 0:00:00 - Load training set data
+INFO - 06/14/22 19:32:24 - 0:00:00 - Load development set data
+INFO - 06/14/22 19:32:24 - 0:00:00 - Load test set data
+INFO - 06/14/22 19:32:29 - 0:00:05 - train size: 50; dev size 0; test size: 4000;
+/home/xuminghu/.local/lib/python3.7/site-packages/transformers/models/auto/modeling_auto.py:925: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
+  FutureWarning,
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertForMaskedLM: ['cls.seq_relationship.bias', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+INFO - 06/14/22 19:32:46 - 0:00:22 - Training on target domain ...
+INFO - 06/14/22 19:32:46 - 0:00:22 - ============== epoch 0 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 0) LOSS:2.0112:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 0) LOSS:2.0112:  25%|██▌       | 1/4 [00:00<00:00,  6.59it/s](Epoch 0) LOSS:1.8784:  25%|██▌       | 1/4 [00:00<00:00,  6.59it/s](Epoch 0) LOSS:1.8052:  25%|██▌       | 1/4 [00:00<00:00,  6.59it/s](Epoch 0) LOSS:1.8052:  75%|███████▌  | 3/4 [00:00<00:00,  9.72it/s](Epoch 0) LOSS:1.7821:  75%|███████▌  | 3/4 [00:00<00:00,  9.72it/s](Epoch 0) LOSS:1.7821: 100%|██████████| 4/4 [00:00<00:00,  8.54it/s](Epoch 0) LOSS:1.7821: 100%|██████████| 4/4 [00:00<00:00,  8.55it/s]
+INFO - 06/14/22 19:32:46 - 0:00:22 - Finish training epoch 0. loss: 1.7821
+INFO - 06/14/22 19:32:46 - 0:00:22 - ============== Evaluate epoch 0 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:19<00:58, 19.46s/it]100%|██████████| 4/4 [00:19<00:00,  3.71s/it]100%|██████████| 4/4 [00:19<00:00,  4.89s/it]
+INFO - 06/14/22 19:33:06 - 0:00:42 - Evaluate on Train Set. Prec: 0.0000 Recall: 0.0000 F1: 0.0000 F1_index: 14.5078 . 
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 省份. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 地市. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 区县. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 乡镇街道. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 路名. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 路号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Index B. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Index I. Prec: 69.0291 Recall: 100.0000 F1: 81.6772
+INFO - 06/14/22 19:33:06 - 0:00:42 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:06 - 0:00:42 - ============== Evaluate epoch 0 on Dev Set ==============
+INFO - 06/14/22 19:33:06 - 0:00:42 - ============== Evaluate epoch 0 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:19<1:20:26, 19.38s/it]  2%|▏         | 5/250 [00:19<11:54,  2.92s/it]    4%|▎         | 9/250 [00:19<05:21,  1.33s/it]  6%|▌         | 15/250 [00:19<02:26,  1.61it/s]  8%|▊         | 21/250 [00:19<01:22,  2.78it/s] 11%|█         | 27/250 [00:19<00:51,  4.37it/s] 13%|█▎        | 33/250 [00:20<00:33,  6.46it/s] 16%|█▌        | 39/250 [00:20<00:23,  9.16it/s] 18%|█▊        | 45/250 [00:20<00:16, 12.53it/s] 20%|██        | 51/250 [00:20<00:12, 16.55it/s] 23%|██▎       | 57/250 [00:20<00:09, 21.05it/s] 25%|██▌       | 63/250 [00:20<00:07, 25.91it/s] 28%|██▊       | 69/250 [00:20<00:05, 30.76it/s] 30%|███       | 75/250 [00:20<00:04, 35.46it/s] 32%|███▏      | 81/250 [00:20<00:04, 39.53it/s] 35%|███▍      | 87/250 [00:21<00:03, 42.81it/s] 37%|███▋      | 93/250 [00:21<00:03, 45.54it/s] 40%|███▉      | 99/250 [00:21<00:03, 47.67it/s] 42%|████▏     | 105/250 [00:21<00:02, 49.39it/s] 44%|████▍     | 111/250 [00:21<00:02, 50.72it/s] 47%|████▋     | 117/250 [00:21<00:02, 51.73it/s] 49%|████▉     | 123/250 [00:21<00:02, 52.47it/s] 52%|█████▏    | 129/250 [00:21<00:02, 52.50it/s] 54%|█████▍    | 135/250 [00:22<00:02, 52.66it/s] 56%|█████▋    | 141/250 [00:22<00:02, 53.15it/s] 59%|█████▉    | 147/250 [00:22<00:01, 53.45it/s] 61%|██████    | 153/250 [00:22<00:01, 53.53it/s] 64%|██████▎   | 159/250 [00:22<00:01, 53.86it/s] 66%|██████▌   | 165/250 [00:22<00:01, 53.79it/s] 68%|██████▊   | 171/250 [00:22<00:01, 53.56it/s] 71%|███████   | 177/250 [00:22<00:01, 53.37it/s] 73%|███████▎  | 183/250 [00:22<00:01, 53.40it/s] 76%|███████▌  | 189/250 [00:23<00:01, 53.40it/s] 78%|███████▊  | 195/250 [00:23<00:01, 53.47it/s] 80%|████████  | 201/250 [00:23<00:00, 53.57it/s] 83%|████████▎ | 207/250 [00:23<00:00, 53.55it/s] 85%|████████▌ | 213/250 [00:23<00:00, 50.02it/s] 88%|████████▊ | 219/250 [00:23<00:00, 47.06it/s] 90%|████████▉ | 224/250 [00:23<00:00, 47.66it/s] 92%|█████████▏| 229/250 [00:23<00:00, 44.51it/s] 94%|█████████▎| 234/250 [00:23<00:00, 44.84it/s] 96%|█████████▌| 239/250 [00:24<00:00, 45.67it/s] 98%|█████████▊| 244/250 [00:24<00:00, 45.85it/s]100%|█████████▉| 249/250 [00:24<00:00, 45.61it/s]100%|██████████| 250/250 [00:24<00:00, 10.28it/s]
+INFO - 06/14/22 19:33:31 - 0:01:07 - Evaluate on Test Set. Prec: 0.0653 Recall: 0.0187 F1: 0.0290 F1_index: 17.2590 . 
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 乡镇街道. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 路名. Prec: 0.2137 Recall: 0.0768 F1: 0.1130
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 路号. Prec: 0.0986 Recall: 0.1287 F1: 0.1117
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 区县. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 地市. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 省份. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Index B. Prec: 100.0000 Recall: 0.0093 F1: 0.0187
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Index I. Prec: 69.0978 Recall: 100.0000 F1: 81.7253
+INFO - 06/14/22 19:33:31 - 0:01:07 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 19:33:31 - 0:01:07 - Found better model!!
+nohup: ignoring input
+INFO - 06/14/22 20:27:08 - 0:00:00 - ============ Initialized logger ============
+INFO - 06/14/22 20:27:08 - 0:00:00 - alpha: 0.5
+                                     batch_size: 16
+                                     bilstm: False
+                                     case_study: False
+                                     ckpt: 
+                                     coach: False
+                                     dropout: 0
+                                     dump_path: experiments/default/1
+                                     early_stop: 8
+                                     emb_dim: 300
+                                     emb_file: ../glove/glove.6B.300d.txt
+                                     entity_enc_hidden_dim: 300
+                                     entity_enc_layers: 1
+                                     epoch: 300
+                                     exp_id: 1
+                                     exp_name: default
+                                     hidden_dim: 768
+                                     logger_filename: train.log
+                                     lr: 5e-05
+                                     lstm_hidden_dim: 256
+                                     model_name: bert-base-cased
+                                     n_layer: 2
+                                     num_source_tag: 23
+                                     num_target_tag: 17
+                                     only_index: False
+                                     seed: 555
+                                     source: False
+                                     src_dm: source
+                                     tgt_dm: target
+                                     usechar: False
+INFO - 06/14/22 20:27:08 - 0:00:00 - The experiment will be stored in experiments/default/1
+                                     
+INFO - 06/14/22 20:27:08 - 0:00:00 - Load training set data
+INFO - 06/14/22 20:27:09 - 0:00:00 - Load development set data
+INFO - 06/14/22 20:27:09 - 0:00:00 - Load test set data
+INFO - 06/14/22 20:27:14 - 0:00:05 - train size: 50; dev size 0; test size: 4000;
+/home/xuminghu/.local/lib/python3.7/site-packages/transformers/models/auto/modeling_auto.py:925: FutureWarning: The class `AutoModelWithLMHead` is deprecated and will be removed in a future version. Please use `AutoModelForCausalLM` for causal language models, `AutoModelForMaskedLM` for masked language models and `AutoModelForSeq2SeqLM` for encoder-decoder models.
+  FutureWarning,
+Some weights of the model checkpoint at bert-base-cased were not used when initializing BertForMaskedLM: ['cls.seq_relationship.weight', 'cls.seq_relationship.bias']
+- This IS expected if you are initializing BertForMaskedLM from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertForMaskedLM from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+INFO - 06/14/22 20:27:29 - 0:00:20 - Training on target domain ...
+INFO - 06/14/22 20:27:29 - 0:00:20 - ============== epoch 0 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 0) LOSS:2.0112:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 0) LOSS:2.0112:  25%|██▌       | 1/4 [00:00<00:00,  4.82it/s](Epoch 0) LOSS:1.8784:  25%|██▌       | 1/4 [00:00<00:00,  4.82it/s](Epoch 0) LOSS:1.8784:  50%|█████     | 2/4 [00:00<00:00,  6.07it/s](Epoch 0) LOSS:1.8052:  50%|█████     | 2/4 [00:00<00:00,  6.07it/s](Epoch 0) LOSS:1.8052:  75%|███████▌  | 3/4 [00:00<00:00,  6.54it/s](Epoch 0) LOSS:1.7821:  75%|███████▌  | 3/4 [00:00<00:00,  6.54it/s](Epoch 0) LOSS:1.7821: 100%|██████████| 4/4 [00:00<00:00,  7.33it/s](Epoch 0) LOSS:1.7821: 100%|██████████| 4/4 [00:00<00:00,  6.74it/s]
+INFO - 06/14/22 20:27:29 - 0:00:21 - Finish training epoch 0. loss: 1.7821
+INFO - 06/14/22 20:27:29 - 0:00:21 - ============== Evaluate epoch 0 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:09<00:28,  9.44s/it]100%|██████████| 4/4 [00:09<00:00,  2.38s/it]
+INFO - 06/14/22 20:27:39 - 0:00:30 - Evaluate on Train Set. Prec: 0.0000 Recall: 0.0000 F1: 0.0000 F1_index: 14.5078 . 
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 省份. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 地市. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 区县. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 乡镇街道. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 路名. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 路号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Index B. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Index I. Prec: 69.0291 Recall: 100.0000 F1: 81.6772
+INFO - 06/14/22 20:27:39 - 0:00:30 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:39 - 0:00:30 - ============== Evaluate epoch 0 on Dev Set ==============
+INFO - 06/14/22 20:27:39 - 0:00:30 - ============== Evaluate epoch 0 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:09<38:51,  9.36s/it]  2%|▏         | 4/250 [00:09<07:22,  1.80s/it]  4%|▎         | 9/250 [00:09<02:31,  1.59it/s]  6%|▌         | 14/250 [00:09<01:19,  2.98it/s]  8%|▊         | 19/250 [00:09<00:48,  4.81it/s] 10%|▉         | 24/250 [00:09<00:31,  7.15it/s] 12%|█▏        | 29/250 [00:10<00:22, 10.03it/s] 14%|█▎        | 34/250 [00:10<00:15, 13.50it/s] 16%|█▌        | 40/250 [00:10<00:11, 18.41it/s] 18%|█▊        | 46/250 [00:10<00:08, 23.63it/s] 21%|██        | 52/250 [00:10<00:06, 28.77it/s] 23%|██▎       | 58/250 [00:10<00:05, 33.48it/s] 26%|██▌       | 64/250 [00:10<00:04, 37.75it/s] 28%|██▊       | 70/250 [00:10<00:04, 41.04it/s] 30%|███       | 76/250 [00:10<00:03, 44.05it/s] 33%|███▎      | 82/250 [00:11<00:03, 46.18it/s] 35%|███▌      | 88/250 [00:11<00:03, 47.62it/s] 38%|███▊      | 94/250 [00:11<00:03, 48.97it/s] 40%|████      | 100/250 [00:11<00:03, 49.92it/s] 42%|████▏     | 106/250 [00:11<00:02, 50.77it/s] 45%|████▍     | 112/250 [00:11<00:02, 51.19it/s] 47%|████▋     | 118/250 [00:11<00:02, 51.68it/s] 50%|████▉     | 124/250 [00:11<00:02, 51.51it/s] 52%|█████▏    | 130/250 [00:12<00:02, 51.75it/s] 54%|█████▍    | 136/250 [00:12<00:02, 51.63it/s] 57%|█████▋    | 142/250 [00:12<00:02, 51.95it/s] 59%|█████▉    | 148/250 [00:12<00:01, 52.12it/s] 62%|██████▏   | 154/250 [00:12<00:01, 52.10it/s] 64%|██████▍   | 160/250 [00:12<00:01, 52.09it/s] 66%|██████▋   | 166/250 [00:12<00:01, 52.11it/s] 69%|██████▉   | 172/250 [00:12<00:01, 51.97it/s] 71%|███████   | 178/250 [00:12<00:01, 51.70it/s] 74%|███████▎  | 184/250 [00:13<00:01, 51.80it/s] 76%|███████▌  | 190/250 [00:13<00:01, 51.76it/s] 78%|███████▊  | 196/250 [00:13<00:01, 51.71it/s] 81%|████████  | 202/250 [00:13<00:00, 51.82it/s] 83%|████████▎ | 208/250 [00:13<00:00, 51.48it/s] 86%|████████▌ | 214/250 [00:13<00:00, 47.98it/s] 88%|████████▊ | 219/250 [00:13<00:00, 46.09it/s] 90%|████████▉ | 224/250 [00:13<00:00, 46.69it/s] 92%|█████████▏| 229/250 [00:14<00:00, 43.79it/s] 94%|█████████▎| 234/250 [00:14<00:00, 44.08it/s] 96%|█████████▌| 239/250 [00:14<00:00, 44.88it/s] 98%|█████████▊| 244/250 [00:14<00:00, 45.15it/s]100%|█████████▉| 249/250 [00:14<00:00, 45.09it/s]100%|██████████| 250/250 [00:14<00:00, 17.27it/s]
+INFO - 06/14/22 20:27:54 - 0:00:45 - Evaluate on Test Set. Prec: 0.0653 Recall: 0.0187 F1: 0.0290 F1_index: 17.2590 . 
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 乡镇街道. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 路名. Prec: 0.2137 Recall: 0.0768 F1: 0.1130
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 路号. Prec: 0.0986 Recall: 0.1287 F1: 0.1117
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 区县. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 地市. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 省份. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Index B. Prec: 100.0000 Recall: 0.0093 F1: 0.0187
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Index I. Prec: 69.0978 Recall: 100.0000 F1: 81.7253
+INFO - 06/14/22 20:27:54 - 0:00:45 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:27:54 - 0:00:45 - Found better model!!
+INFO - 06/14/22 20:27:54 - 0:00:45 - ============== epoch 1 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 1) LOSS:1.5621:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 1) LOSS:1.5621:  25%|██▌       | 1/4 [00:00<00:00,  9.48it/s](Epoch 1) LOSS:1.5286:  25%|██▌       | 1/4 [00:00<00:00,  9.48it/s](Epoch 1) LOSS:1.5286:  50%|█████     | 2/4 [00:00<00:00,  8.51it/s](Epoch 1) LOSS:1.5221:  50%|█████     | 2/4 [00:00<00:00,  8.51it/s](Epoch 1) LOSS:1.5221:  75%|███████▌  | 3/4 [00:00<00:00,  8.81it/s](Epoch 1) LOSS:1.4832:  75%|███████▌  | 3/4 [00:00<00:00,  8.81it/s](Epoch 1) LOSS:1.4832: 100%|██████████| 4/4 [00:00<00:00,  9.12it/s]
+INFO - 06/14/22 20:27:54 - 0:00:46 - Finish training epoch 1. loss: 1.4832
+INFO - 06/14/22 20:27:54 - 0:00:46 - ============== Evaluate epoch 1 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:09<00:28,  9.57s/it]100%|██████████| 4/4 [00:09<00:00,  2.41s/it]
+INFO - 06/14/22 20:28:04 - 0:00:56 - Evaluate on Train Set. Prec: 9.2105 Recall: 9.3333 F1: 9.2715 F1_index: 46.6887 . 
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 地市. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 区县. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 路名. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 路号. Prec: 36.1702 Recall: 62.9630 F1: 45.9459
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 兴趣点. Prec: 9.0909 Recall: 19.0476 F1: 12.3077
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 省份. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 乡镇街道. Prec: 3.4483 Recall: 11.5385 F1: 5.3097
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Index B. Prec: 98.0000 Recall: 16.3333 F1: 28.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Index I. Prec: 72.5510 Recall: 100.0000 F1: 84.0923
+INFO - 06/14/22 20:28:04 - 0:00:56 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:04 - 0:00:56 - ============== Evaluate epoch 1 on Dev Set ==============
+INFO - 06/14/22 20:28:04 - 0:00:56 - ============== Evaluate epoch 1 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:09<39:16,  9.46s/it]  2%|▏         | 5/250 [00:09<05:50,  1.43s/it]  4%|▍         | 10/250 [00:09<02:19,  1.72it/s]  6%|▌         | 15/250 [00:09<01:16,  3.09it/s]  8%|▊         | 20/250 [00:09<00:46,  4.90it/s] 10%|█         | 25/250 [00:10<00:31,  7.21it/s] 12%|█▏        | 30/250 [00:10<00:21, 10.07it/s] 14%|█▍        | 35/250 [00:10<00:15, 13.55it/s] 16%|█▋        | 41/250 [00:10<00:11, 18.46it/s] 19%|█▉        | 47/250 [00:10<00:08, 23.65it/s] 21%|██        | 53/250 [00:10<00:06, 28.79it/s] 24%|██▎       | 59/250 [00:10<00:05, 33.51it/s] 26%|██▌       | 65/250 [00:10<00:04, 37.60it/s] 28%|██▊       | 71/250 [00:10<00:04, 41.14it/s] 31%|███       | 77/250 [00:11<00:03, 44.05it/s] 33%|███▎      | 83/250 [00:11<00:03, 46.13it/s] 36%|███▌      | 89/250 [00:11<00:03, 47.73it/s] 38%|███▊      | 95/250 [00:11<00:03, 49.10it/s] 40%|████      | 101/250 [00:11<00:02, 50.01it/s] 43%|████▎     | 107/250 [00:11<00:02, 50.69it/s] 45%|████▌     | 113/250 [00:11<00:02, 51.24it/s] 48%|████▊     | 119/250 [00:11<00:02, 51.63it/s] 50%|█████     | 125/250 [00:11<00:02, 51.47it/s] 52%|█████▏    | 131/250 [00:12<00:02, 51.69it/s] 55%|█████▍    | 137/250 [00:12<00:02, 51.79it/s] 57%|█████▋    | 143/250 [00:12<00:02, 51.89it/s] 60%|█████▉    | 149/250 [00:12<00:01, 51.94it/s] 62%|██████▏   | 155/250 [00:12<00:01, 52.05it/s] 64%|██████▍   | 161/250 [00:12<00:01, 52.12it/s] 67%|██████▋   | 167/250 [00:12<00:01, 52.10it/s] 69%|██████▉   | 173/250 [00:12<00:01, 51.93it/s] 72%|███████▏  | 179/250 [00:13<00:01, 51.64it/s] 74%|███████▍  | 185/250 [00:13<00:01, 51.70it/s] 76%|███████▋  | 191/250 [00:13<00:01, 51.54it/s] 79%|███████▉  | 197/250 [00:13<00:01, 51.42it/s] 81%|████████  | 203/250 [00:13<00:00, 51.57it/s] 84%|████████▎ | 209/250 [00:13<00:00, 50.56it/s] 86%|████████▌ | 215/250 [00:13<00:00, 47.05it/s] 88%|████████▊ | 220/250 [00:13<00:00, 46.59it/s] 90%|█████████ | 225/250 [00:13<00:00, 47.06it/s] 92%|█████████▏| 230/250 [00:14<00:00, 43.69it/s] 94%|█████████▍| 235/250 [00:14<00:00, 44.32it/s] 96%|█████████▌| 240/250 [00:14<00:00, 45.27it/s] 98%|█████████▊| 245/250 [00:14<00:00, 45.44it/s]100%|██████████| 250/250 [00:14<00:00, 45.35it/s]100%|██████████| 250/250 [00:14<00:00, 17.18it/s]
+INFO - 06/14/22 20:28:19 - 0:01:11 - Evaluate on Test Set. Prec: 5.3531 Recall: 5.3836 F1: 5.3683 F1_index: 45.6327 . 
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 乡镇街道. Prec: 0.4368 Recall: 1.2475 F1: 0.6471
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 兴趣点. Prec: 4.9505 Recall: 11.2919 F1: 6.8833
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 路名. Prec: 0.5979 Recall: 0.1537 F1: 0.2445
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 路号. Prec: 26.5814 Recall: 49.4852 F1: 34.5851
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 区县. Prec: 0.3271 Recall: 0.5116 F1: 0.3990
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 地市. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 省份. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Index B. Prec: 99.5701 Recall: 18.3826 F1: 31.0354
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Index I. Prec: 72.9511 Recall: 100.0000 F1: 84.3604
+INFO - 06/14/22 20:28:19 - 0:01:11 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:19 - 0:01:11 - Found better model!!
+INFO - 06/14/22 20:28:19 - 0:01:11 - ============== epoch 2 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 2) LOSS:1.3799:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 2) LOSS:1.3799:  25%|██▌       | 1/4 [00:00<00:00,  9.67it/s](Epoch 2) LOSS:1.3930:  25%|██▌       | 1/4 [00:00<00:00,  9.67it/s](Epoch 2) LOSS:1.3777:  25%|██▌       | 1/4 [00:00<00:00,  9.67it/s](Epoch 2) LOSS:1.3777:  75%|███████▌  | 3/4 [00:00<00:00, 10.05it/s](Epoch 2) LOSS:1.3525:  75%|███████▌  | 3/4 [00:00<00:00, 10.05it/s](Epoch 2) LOSS:1.3525: 100%|██████████| 4/4 [00:00<00:00, 10.12it/s]
+INFO - 06/14/22 20:28:19 - 0:01:11 - Finish training epoch 2. loss: 1.3525
+INFO - 06/14/22 20:28:19 - 0:01:11 - ============== Evaluate epoch 2 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:19<00:58, 19.54s/it]100%|██████████| 4/4 [00:19<00:00,  4.90s/it]
+INFO - 06/14/22 20:28:39 - 0:01:31 - Evaluate on Train Set. Prec: 19.8052 Recall: 20.3333 F1: 20.0658 F1_index: 59.8684 . 
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 地市. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 区县. Prec: 4.4444 Recall: 5.4054 F1: 4.8780
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 乡镇街道. Prec: 2.6316 Recall: 3.8462 F1: 3.1250
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 路名. Prec: 4.8780 Recall: 4.5455 F1: 4.7059
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 路号. Prec: 45.2830 Recall: 88.8889 F1: 60.0000
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 兴趣点. Prec: 13.5802 Recall: 26.1905 F1: 17.8862
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 省份. Prec: 50.0000 Recall: 84.0000 F1: 62.6866
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Index B. Prec: 97.1963 Recall: 34.6667 F1: 51.1057
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Index I. Prec: 77.0314 Recall: 100.0000 F1: 87.0257
+INFO - 06/14/22 20:28:39 - 0:01:31 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:28:39 - 0:01:31 - ============== Evaluate epoch 2 on Dev Set ==============
+INFO - 06/14/22 20:28:39 - 0:01:31 - ============== Evaluate epoch 2 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:29<2:02:03, 29.41s/it]  2%|▏         | 5/250 [00:29<17:58,  4.40s/it]    4%|▎         | 9/250 [00:29<08:02,  2.00s/it]  5%|▌         | 13/250 [00:29<04:29,  1.14s/it]  7%|▋         | 17/250 [00:29<02:45,  1.41it/s]  8%|▊         | 21/250 [00:29<01:46,  2.15it/s] 10%|█         | 25/250 [00:30<01:11,  3.14it/s] 12%|█▏        | 29/250 [00:30<00:49,  4.48it/s] 14%|█▎        | 34/250 [00:30<00:32,  6.68it/s] 16%|█▌        | 39/250 [00:30<00:22,  9.44it/s] 18%|█▊        | 44/250 [00:30<00:16, 12.83it/s] 20%|█▉        | 49/250 [00:30<00:11, 16.80it/s] 22%|██▏       | 54/250 [00:30<00:09, 21.14it/s] 24%|██▎       | 59/250 [00:30<00:07, 25.71it/s] 26%|██▌       | 64/250 [00:30<00:06, 30.20it/s] 28%|██▊       | 69/250 [00:31<00:05, 34.03it/s] 30%|██▉       | 74/250 [00:31<00:04, 37.54it/s] 32%|███▏      | 79/250 [00:31<00:04, 40.20it/s] 34%|███▎      | 84/250 [00:31<00:03, 42.31it/s] 36%|███▌      | 89/250 [00:31<00:03, 43.72it/s] 38%|███▊      | 94/250 [00:31<00:03, 45.35it/s] 40%|███▉      | 99/250 [00:31<00:03, 46.50it/s] 42%|████▏     | 104/250 [00:31<00:03, 47.36it/s] 44%|████▎     | 109/250 [00:31<00:02, 48.10it/s] 46%|████▌     | 115/250 [00:31<00:02, 48.83it/s] 48%|████▊     | 121/250 [00:32<00:02, 49.30it/s] 50%|█████     | 126/250 [00:32<00:02, 48.97it/s] 52%|█████▏    | 131/250 [00:32<00:02, 48.78it/s] 54%|█████▍    | 136/250 [00:32<00:02, 48.50it/s] 56%|█████▋    | 141/250 [00:32<00:02, 48.49it/s] 58%|█████▊    | 146/250 [00:32<00:02, 48.58it/s] 60%|██████    | 151/250 [00:32<00:02, 48.96it/s] 62%|██████▏   | 156/250 [00:32<00:01, 48.79it/s] 64%|██████▍   | 161/250 [00:32<00:01, 48.85it/s] 66%|██████▋   | 166/250 [00:33<00:01, 48.70it/s] 68%|██████▊   | 171/250 [00:33<00:01, 48.33it/s] 70%|███████   | 176/250 [00:33<00:01, 48.42it/s] 72%|███████▏  | 181/250 [00:33<00:01, 48.48it/s] 74%|███████▍  | 186/250 [00:33<00:01, 48.74it/s] 76%|███████▋  | 191/250 [00:33<00:01, 48.83it/s] 78%|███████▊  | 196/250 [00:33<00:01, 48.67it/s] 80%|████████  | 201/250 [00:33<00:01, 48.91it/s] 82%|████████▏ | 206/250 [00:33<00:00, 49.10it/s] 84%|████████▍ | 211/250 [00:33<00:00, 47.38it/s] 86%|████████▋ | 216/250 [00:34<00:00, 44.32it/s] 88%|████████▊ | 221/250 [00:34<00:00, 44.35it/s] 90%|█████████ | 226/250 [00:34<00:00, 44.38it/s] 92%|█████████▏| 231/250 [00:34<00:00, 41.84it/s] 94%|█████████▍| 236/250 [00:34<00:00, 43.23it/s] 96%|█████████▋| 241/250 [00:34<00:00, 39.03it/s] 98%|█████████▊| 246/250 [00:34<00:00, 38.49it/s]100%|██████████| 250/250 [00:34<00:00,  7.16it/s]
+INFO - 06/14/22 20:29:15 - 0:02:06 - Evaluate on Test Set. Prec: 12.5581 Recall: 13.9982 F1: 13.2391 F1_index: 54.2371 . 
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 乡镇街道. Prec: 0.7596 Recall: 1.4471 F1: 0.9962
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 兴趣点. Prec: 9.8242 Recall: 18.0007 F1: 12.7111
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 路名. Prec: 0.8475 Recall: 1.2294 F1: 1.0033
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 路号. Prec: 43.5414 Recall: 90.6692 F1: 58.8309
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 区县. Prec: 1.3306 Recall: 1.7394 F1: 1.5078
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 地市. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 省份. Prec: 27.7613 Recall: 47.0796 F1: 34.9272
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Index B. Prec: 96.2958 Recall: 33.1372 F1: 49.3070
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Index I. Prec: 76.3862 Recall: 99.6615 F1: 86.4852
+INFO - 06/14/22 20:29:15 - 0:02:06 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:15 - 0:02:06 - Found better model!!
+INFO - 06/14/22 20:29:15 - 0:02:06 - ============== epoch 3 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 3) LOSS:1.1980:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 3) LOSS:1.2486:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 3) LOSS:1.2486:  50%|█████     | 2/4 [00:00<00:00, 12.01it/s](Epoch 3) LOSS:1.2074:  50%|█████     | 2/4 [00:00<00:00, 12.01it/s](Epoch 3) LOSS:1.2321:  50%|█████     | 2/4 [00:00<00:00, 12.01it/s](Epoch 3) LOSS:1.2321: 100%|██████████| 4/4 [00:00<00:00,  8.93it/s](Epoch 3) LOSS:1.2321: 100%|██████████| 4/4 [00:00<00:00,  9.28it/s]
+INFO - 06/14/22 20:29:15 - 0:02:07 - Finish training epoch 3. loss: 1.2321
+INFO - 06/14/22 20:29:15 - 0:02:07 - ============== Evaluate epoch 3 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:09<00:28,  9.45s/it]100%|██████████| 4/4 [00:09<00:00,  2.38s/it]
+INFO - 06/14/22 20:29:25 - 0:02:16 - Evaluate on Train Set. Prec: 21.2500 Recall: 22.6667 F1: 21.9355 F1_index: 59.0323 . 
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 省份. Prec: 41.1765 Recall: 84.0000 F1: 55.2632
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 地市. Prec: 15.0000 Recall: 21.4286 F1: 17.6471
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 区县. Prec: 9.0909 Recall: 10.8108 F1: 9.8765
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 乡镇街道. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 房屋编号. Prec: 16.6667 Recall: 7.6923 F1: 10.5263
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 兴趣点. Prec: 15.4930 Recall: 26.1905 F1: 19.4690
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 路名. Prec: 3.3898 Recall: 4.5455 F1: 3.8835
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 路号. Prec: 50.0000 Recall: 85.1852 F1: 63.0137
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Index B. Prec: 93.5780 Recall: 34.0000 F1: 49.8778
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Index I. Prec: 76.8730 Recall: 99.5781 F1: 86.7647
+INFO - 06/14/22 20:29:25 - 0:02:16 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:29:25 - 0:02:16 - ============== Evaluate epoch 3 on Dev Set ==============
+INFO - 06/14/22 20:29:25 - 0:02:16 - ============== Evaluate epoch 3 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:39<2:44:11, 39.56s/it]  2%|▏         | 5/250 [00:39<24:09,  5.91s/it]    4%|▍         | 10/250 [00:39<09:26,  2.36s/it]  6%|▌         | 14/250 [00:39<05:32,  1.41s/it]  7%|▋         | 18/250 [00:40<03:28,  1.11it/s]  9%|▉         | 22/250 [00:40<02:16,  1.67it/s] 10%|█         | 26/250 [00:40<01:31,  2.44it/s] 12%|█▏        | 30/250 [00:40<01:03,  3.49it/s] 14%|█▍        | 35/250 [00:40<00:40,  5.26it/s] 16%|█▌        | 40/250 [00:40<00:27,  7.58it/s] 18%|█▊        | 45/250 [00:40<00:19, 10.51it/s] 20%|██        | 50/250 [00:40<00:14, 14.04it/s] 22%|██▏       | 56/250 [00:40<00:10, 18.87it/s] 24%|██▍       | 61/250 [00:40<00:08, 23.08it/s] 26%|██▋       | 66/250 [00:41<00:06, 27.23it/s] 28%|██▊       | 71/250 [00:41<00:05, 31.31it/s] 30%|███       | 76/250 [00:41<00:04, 34.89it/s] 32%|███▏      | 81/250 [00:41<00:04, 37.69it/s] 34%|███▍      | 86/250 [00:41<00:04, 40.22it/s] 37%|███▋      | 92/250 [00:41<00:03, 43.16it/s] 39%|███▉      | 97/250 [00:41<00:03, 44.14it/s] 41%|████      | 102/250 [00:41<00:03, 41.74it/s] 43%|████▎     | 107/250 [00:41<00:03, 39.80it/s] 45%|████▍     | 112/250 [00:42<00:03, 40.53it/s] 47%|████▋     | 117/250 [00:42<00:03, 41.20it/s] 49%|████▉     | 122/250 [00:42<00:03, 41.44it/s] 51%|█████     | 127/250 [00:42<00:03, 36.85it/s] 52%|█████▏    | 131/250 [00:42<00:03, 35.99it/s] 54%|█████▍    | 135/250 [00:42<00:03, 35.69it/s] 56%|█████▌    | 139/250 [00:42<00:03, 35.68it/s] 57%|█████▋    | 143/250 [00:42<00:03, 35.53it/s] 59%|█████▉    | 147/250 [00:43<00:03, 33.78it/s] 60%|██████    | 151/250 [00:43<00:02, 35.14it/s] 62%|██████▏   | 156/250 [00:43<00:02, 37.42it/s] 64%|██████▍   | 161/250 [00:43<00:02, 38.84it/s] 66%|██████▋   | 166/250 [00:43<00:02, 39.43it/s] 68%|██████▊   | 170/250 [00:43<00:02, 39.28it/s] 70%|██████▉   | 174/250 [00:43<00:01, 38.60it/s] 71%|███████   | 178/250 [00:43<00:02, 35.10it/s] 73%|███████▎  | 182/250 [00:43<00:01, 36.21it/s] 75%|███████▍  | 187/250 [00:44<00:01, 36.53it/s] 76%|███████▋  | 191/250 [00:44<00:01, 33.06it/s] 78%|███████▊  | 195/250 [00:44<00:01, 34.38it/s] 80%|████████  | 200/250 [00:44<00:01, 36.94it/s] 82%|████████▏ | 205/250 [00:44<00:01, 38.61it/s] 84%|████████▍ | 210/250 [00:44<00:01, 39.37it/s] 86%|████████▌ | 214/250 [00:44<00:00, 38.86it/s] 87%|████████▋ | 218/250 [00:44<00:00, 37.95it/s] 89%|████████▉ | 222/250 [00:45<00:00, 38.19it/s] 91%|█████████ | 227/250 [00:45<00:00, 39.86it/s] 92%|█████████▏| 231/250 [00:45<00:00, 38.27it/s] 94%|█████████▍| 236/250 [00:45<00:00, 40.34it/s] 96%|█████████▋| 241/250 [00:45<00:00, 41.78it/s] 98%|█████████▊| 246/250 [00:45<00:00, 42.24it/s]100%|██████████| 250/250 [00:45<00:00,  5.47it/s]
+INFO - 06/14/22 20:30:11 - 0:03:03 - Evaluate on Test Set. Prec: 14.2380 Recall: 15.9313 F1: 15.0371 F1_index: 54.8115 . 
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 乡镇街道. Prec: 0.5882 Recall: 0.0499 F1: 0.0920
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 兴趣点. Prec: 10.9554 Recall: 18.6981 F1: 13.8160
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 路名. Prec: 3.2125 Recall: 6.3004 F1: 4.2553
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 路号. Prec: 45.2229 Recall: 86.8082 F1: 59.4666
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 区县. Prec: 5.5192 Recall: 6.6166 F1: 6.0183
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 地市. Prec: 6.5023 Recall: 6.9519 F1: 6.7196
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 省份. Prec: 23.2429 Recall: 48.2880 F1: 31.3809
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Index B. Prec: 93.1707 Recall: 31.2135 F1: 46.7613
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Index I. Prec: 75.8644 Recall: 99.2669 F1: 86.0020
+INFO - 06/14/22 20:30:11 - 0:03:03 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:11 - 0:03:03 - Found better model!!
+INFO - 06/14/22 20:30:11 - 0:03:03 - ============== epoch 4 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 4) LOSS:1.1346:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 4) LOSS:1.1346:  25%|██▌       | 1/4 [00:00<00:00,  9.18it/s](Epoch 4) LOSS:1.1213:  25%|██▌       | 1/4 [00:00<00:00,  9.18it/s](Epoch 4) LOSS:1.1213:  50%|█████     | 2/4 [00:00<00:00,  8.32it/s](Epoch 4) LOSS:1.1136:  50%|█████     | 2/4 [00:00<00:00,  8.32it/s](Epoch 4) LOSS:1.1136:  75%|███████▌  | 3/4 [00:00<00:00,  7.85it/s](Epoch 4) LOSS:1.0756:  75%|███████▌  | 3/4 [00:00<00:00,  7.85it/s](Epoch 4) LOSS:1.0756: 100%|██████████| 4/4 [00:00<00:00,  7.69it/s](Epoch 4) LOSS:1.0756: 100%|██████████| 4/4 [00:00<00:00,  7.88it/s]
+INFO - 06/14/22 20:30:11 - 0:03:03 - Finish training epoch 4. loss: 1.0756
+INFO - 06/14/22 20:30:11 - 0:03:03 - ============== Evaluate epoch 4 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:19<00:58, 19.60s/it]100%|██████████| 4/4 [00:19<00:00,  4.92s/it]
+INFO - 06/14/22 20:30:31 - 0:03:23 - Evaluate on Train Set. Prec: 20.1342 Recall: 20.0000 F1: 20.0669 F1_index: 56.8562 . 
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 地市. Prec: 5.5556 Recall: 3.5714 F1: 4.3478
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 区县. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 路名. Prec: 5.8824 Recall: 9.0909 F1: 7.1429
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 兴趣点. Prec: 18.6441 Recall: 26.1905 F1: 21.7822
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 省份. Prec: 62.8571 Recall: 88.0000 F1: 73.3333
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 乡镇街道. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 路号. Prec: 43.7500 Recall: 77.7778 F1: 56.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 房屋编号. Prec: 14.2857 Recall: 7.6923 F1: 10.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Index B. Prec: 95.3271 Recall: 34.0000 F1: 50.1229
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Index I. Prec: 77.0314 Recall: 100.0000 F1: 87.0257
+INFO - 06/14/22 20:30:31 - 0:03:23 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:31 - 0:03:23 - ============== Evaluate epoch 4 on Dev Set ==============
+INFO - 06/14/22 20:30:31 - 0:03:23 - ============== Evaluate epoch 4 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:09<39:35,  9.54s/it]  2%|▏         | 5/250 [00:09<05:53,  1.44s/it]  3%|▎         | 8/250 [00:09<03:07,  1.29it/s]  5%|▌         | 13/250 [00:09<01:28,  2.67it/s]  7%|▋         | 18/250 [00:09<00:51,  4.51it/s] 10%|▉         | 24/250 [00:10<00:30,  7.36it/s] 12%|█▏        | 30/250 [00:10<00:20, 10.88it/s] 14%|█▍        | 36/250 [00:10<00:14, 15.08it/s] 17%|█▋        | 42/250 [00:10<00:10, 19.74it/s] 19%|█▉        | 48/250 [00:10<00:08, 24.70it/s] 22%|██▏       | 54/250 [00:10<00:06, 29.52it/s] 24%|██▍       | 60/250 [00:10<00:05, 33.99it/s] 26%|██▋       | 66/250 [00:10<00:04, 38.08it/s] 29%|██▉       | 72/250 [00:11<00:04, 41.41it/s] 31%|███       | 78/250 [00:11<00:03, 44.13it/s] 34%|███▎      | 84/250 [00:11<00:03, 46.14it/s] 36%|███▌      | 90/250 [00:11<00:03, 47.57it/s] 38%|███▊      | 96/250 [00:11<00:03, 48.80it/s] 41%|████      | 102/250 [00:11<00:02, 49.72it/s] 43%|████▎     | 108/250 [00:11<00:02, 50.20it/s] 46%|████▌     | 114/250 [00:11<00:02, 50.83it/s] 48%|████▊     | 120/250 [00:11<00:02, 51.22it/s] 50%|█████     | 126/250 [00:12<00:02, 51.16it/s] 53%|█████▎    | 132/250 [00:12<00:02, 51.42it/s] 55%|█████▌    | 138/250 [00:12<00:02, 51.51it/s] 58%|█████▊    | 144/250 [00:12<00:02, 51.83it/s] 60%|██████    | 150/250 [00:12<00:01, 51.90it/s] 62%|██████▏   | 156/250 [00:12<00:01, 52.05it/s] 65%|██████▍   | 162/250 [00:12<00:01, 52.05it/s] 67%|██████▋   | 168/250 [00:12<00:01, 51.85it/s] 70%|██████▉   | 174/250 [00:13<00:01, 51.64it/s] 72%|███████▏  | 180/250 [00:13<00:01, 51.51it/s] 74%|███████▍  | 186/250 [00:13<00:01, 51.48it/s] 77%|███████▋  | 192/250 [00:13<00:01, 51.40it/s] 79%|███████▉  | 198/250 [00:13<00:01, 51.45it/s] 82%|████████▏ | 204/250 [00:13<00:00, 51.68it/s] 84%|████████▍ | 210/250 [00:13<00:00, 50.28it/s] 86%|████████▋ | 216/250 [00:13<00:00, 46.46it/s] 88%|████████▊ | 221/250 [00:13<00:00, 46.22it/s] 90%|█████████ | 226/250 [00:14<00:00, 46.29it/s] 92%|█████████▏| 231/250 [00:14<00:00, 43.39it/s] 94%|█████████▍| 236/250 [00:14<00:00, 44.43it/s] 96%|█████████▋| 241/250 [00:14<00:00, 45.10it/s] 98%|█████████▊| 246/250 [00:14<00:00, 44.73it/s]100%|██████████| 250/250 [00:14<00:00, 17.09it/s]
+INFO - 06/14/22 20:30:46 - 0:03:38 - Evaluate on Test Set. Prec: 13.9326 Recall: 14.1056 F1: 14.0186 F1_index: 53.9536 . 
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 乡镇街道. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 兴趣点. Prec: 10.7949 Recall: 14.6131 F1: 12.4171
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 路名. Prec: 4.6734 Recall: 9.3738 F1: 6.2372
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 路号. Prec: 41.3379 Recall: 77.5418 F1: 53.9271
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 房屋编号. Prec: 2.2305 Recall: 0.5505 F1: 0.8830
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 区县. Prec: 1.6695 Recall: 2.6944 F1: 2.0616
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 地市. Prec: 8.3678 Recall: 3.0940 F1: 4.5176
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 省份. Prec: 32.9016 Recall: 47.3313 F1: 38.8189
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 单元号. Prec: 7.0270 Recall: 7.3654 F1: 7.1923
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Index B. Prec: 95.9011 Recall: 33.3193 F1: 49.4560
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Index I. Prec: 76.4711 Recall: 99.6673 F1: 86.5418
+INFO - 06/14/22 20:30:46 - 0:03:38 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:46 - 0:03:38 - No better model found (1/8)
+INFO - 06/14/22 20:30:46 - 0:03:38 - ============== epoch 5 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 5) LOSS:1.0471:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 5) LOSS:1.0471:  25%|██▌       | 1/4 [00:00<00:00,  9.59it/s](Epoch 5) LOSS:1.0618:  25%|██▌       | 1/4 [00:00<00:00,  9.59it/s](Epoch 5) LOSS:1.0618:  50%|█████     | 2/4 [00:00<00:00,  8.51it/s](Epoch 5) LOSS:1.0178:  50%|█████     | 2/4 [00:00<00:00,  8.51it/s](Epoch 5) LOSS:1.0178:  75%|███████▌  | 3/4 [00:00<00:00,  8.52it/s](Epoch 5) LOSS:1.0052:  75%|███████▌  | 3/4 [00:00<00:00,  8.52it/s](Epoch 5) LOSS:1.0052: 100%|██████████| 4/4 [00:00<00:00,  8.40it/s](Epoch 5) LOSS:1.0052: 100%|██████████| 4/4 [00:00<00:00,  8.51it/s]
+INFO - 06/14/22 20:30:47 - 0:03:38 - Finish training epoch 5. loss: 1.0052
+INFO - 06/14/22 20:30:47 - 0:03:38 - ============== Evaluate epoch 5 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:09<00:28,  9.52s/it]100%|██████████| 4/4 [00:09<00:00,  2.40s/it]
+INFO - 06/14/22 20:30:56 - 0:03:48 - Evaluate on Train Set. Prec: 24.6418 Recall: 28.6667 F1: 26.5023 F1_index: 61.6333 . 
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 乡镇街道. Prec: 4.6875 Recall: 11.5385 F1: 6.6667
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 兴趣点. Prec: 18.1818 Recall: 28.5714 F1: 22.2222
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 省份. Prec: 52.3810 Recall: 88.0000 F1: 65.6716
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 地市. Prec: 25.9259 Recall: 25.0000 F1: 25.4545
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 区县. Prec: 27.5862 Recall: 21.6216 F1: 24.2424
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 路名. Prec: 8.9286 Recall: 11.3636 F1: 10.0000
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 路号. Prec: 52.0000 Recall: 96.2963 F1: 67.5325
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 房屋编号. Prec: 100.0000 Recall: 7.6923 F1: 14.2857
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 楼层号. Prec: 40.0000 Recall: 25.0000 F1: 30.7692
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Index B. Prec: 95.6204 Recall: 43.6667 F1: 59.9542
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Index I. Prec: 79.5073 Recall: 99.8594 F1: 88.5287
+INFO - 06/14/22 20:30:56 - 0:03:48 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:30:56 - 0:03:48 - ============== Evaluate epoch 5 on Dev Set ==============
+INFO - 06/14/22 20:30:56 - 0:03:48 - ============== Evaluate epoch 5 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:29<2:02:25, 29.50s/it]  2%|▏         | 5/250 [00:29<18:02,  4.42s/it]    4%|▎         | 9/250 [00:29<08:04,  2.01s/it]  5%|▌         | 13/250 [00:29<04:29,  1.14s/it]  7%|▋         | 17/250 [00:29<02:45,  1.41it/s]  8%|▊         | 21/250 [00:30<01:46,  2.14it/s] 10%|█         | 25/250 [00:30<01:11,  3.14it/s] 12%|█▏        | 29/250 [00:30<00:49,  4.47it/s] 14%|█▎        | 34/250 [00:30<00:32,  6.65it/s] 16%|█▌        | 39/250 [00:30<00:22,  9.45it/s] 18%|█▊        | 44/250 [00:30<00:16, 12.72it/s] 20%|█▉        | 49/250 [00:30<00:12, 16.39it/s] 22%|██▏       | 54/250 [00:30<00:09, 20.29it/s] 24%|██▎       | 59/250 [00:30<00:07, 24.71it/s] 26%|██▌       | 64/250 [00:31<00:06, 28.74it/s] 28%|██▊       | 69/250 [00:31<00:05, 31.72it/s] 30%|███       | 75/250 [00:31<00:04, 36.01it/s] 32%|███▏      | 80/250 [00:31<00:04, 38.79it/s] 34%|███▍      | 85/250 [00:31<00:04, 39.64it/s] 36%|███▌      | 90/250 [00:31<00:03, 40.77it/s] 38%|███▊      | 95/250 [00:31<00:03, 42.59it/s] 40%|████      | 100/250 [00:31<00:03, 43.36it/s] 42%|████▏     | 105/250 [00:31<00:03, 44.23it/s] 44%|████▍     | 110/250 [00:32<00:03, 44.60it/s] 46%|████▌     | 115/250 [00:32<00:02, 45.85it/s] 48%|████▊     | 120/250 [00:32<00:02, 45.50it/s] 50%|█████     | 125/250 [00:32<00:02, 42.85it/s] 52%|█████▏    | 131/250 [00:32<00:02, 43.41it/s] 54%|█████▍    | 136/250 [00:32<00:02, 44.22it/s] 56%|█████▋    | 141/250 [00:32<00:02, 44.33it/s] 58%|█████▊    | 146/250 [00:32<00:02, 44.86it/s] 60%|██████    | 151/250 [00:32<00:02, 45.92it/s] 62%|██████▏   | 156/250 [00:33<00:02, 45.17it/s] 64%|██████▍   | 161/250 [00:33<00:01, 45.06it/s] 66%|██████▋   | 166/250 [00:33<00:01, 45.22it/s] 68%|██████▊   | 171/250 [00:33<00:01, 44.98it/s] 70%|███████   | 176/250 [00:33<00:01, 43.93it/s] 72%|███████▏  | 181/250 [00:33<00:01, 42.55it/s] 74%|███████▍  | 186/250 [00:33<00:01, 43.95it/s] 76%|███████▋  | 191/250 [00:33<00:01, 44.03it/s] 78%|███████▊  | 196/250 [00:34<00:01, 43.78it/s] 80%|████████  | 201/250 [00:34<00:01, 43.99it/s] 82%|████████▏ | 206/250 [00:34<00:00, 44.47it/s] 84%|████████▍ | 211/250 [00:34<00:00, 39.93it/s] 86%|████████▋ | 216/250 [00:34<00:01, 31.66it/s] 88%|████████▊ | 220/250 [00:34<00:00, 31.10it/s] 90%|████████▉ | 224/250 [00:34<00:00, 32.09it/s] 91%|█████████ | 228/250 [00:34<00:00, 31.92it/s] 93%|█████████▎| 232/250 [00:35<00:00, 28.10it/s] 94%|█████████▍| 236/250 [00:35<00:00, 29.67it/s] 96%|█████████▌| 240/250 [00:35<00:00, 30.03it/s] 98%|█████████▊| 244/250 [00:35<00:00, 29.74it/s] 99%|█████████▉| 248/250 [00:35<00:00, 29.37it/s]100%|██████████| 250/250 [00:35<00:00,  6.99it/s]
+INFO - 06/14/22 20:31:33 - 0:04:24 - Evaluate on Test Set. Prec: 15.8947 Recall: 18.4106 F1: 17.0604 F1_index: 56.9531 . 
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 乡镇街道. Prec: 2.1467 Recall: 5.7385 F1: 3.1246
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 兴趣点. Prec: 11.1832 Recall: 17.1704 F1: 13.5447
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 路名. Prec: 10.8366 Recall: 17.8640 F1: 13.4900
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 路号. Prec: 46.6292 Recall: 90.7979 F1: 61.6157
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 房屋编号. Prec: 2.4242 Recall: 0.3670 F1: 0.6375
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 区县. Prec: 7.1341 Recall: 3.9563 F1: 5.0900
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 地市. Prec: 17.5748 Recall: 12.5668 F1: 14.6548
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 楼层号. Prec: 13.7363 Recall: 5.1653 F1: 7.5075
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 省份. Prec: 28.8162 Recall: 47.4320 F1: 35.8516
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 行政村或社区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 单元号. Prec: 8.8372 Recall: 5.3824 F1: 6.6901
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Index B. Prec: 91.5752 Recall: 38.5722 F1: 54.2808
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Index I. Prec: 77.7526 Recall: 98.9613 F1: 87.0843
+INFO - 06/14/22 20:31:33 - 0:04:24 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:33 - 0:04:24 - Found better model!!
+INFO - 06/14/22 20:31:33 - 0:04:24 - ============== epoch 6 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 6) LOSS:0.9790:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 6) LOSS:0.9790:  25%|██▌       | 1/4 [00:00<00:00,  8.84it/s](Epoch 6) LOSS:0.9167:  25%|██▌       | 1/4 [00:00<00:00,  8.84it/s](Epoch 6) LOSS:0.9167:  50%|█████     | 2/4 [00:00<00:00,  7.47it/s](Epoch 6) LOSS:0.9193:  50%|█████     | 2/4 [00:00<00:00,  7.47it/s](Epoch 6) LOSS:0.9193:  75%|███████▌  | 3/4 [00:00<00:00,  6.70it/s](Epoch 6) LOSS:0.9305:  75%|███████▌  | 3/4 [00:00<00:00,  6.70it/s](Epoch 6) LOSS:0.9305: 100%|██████████| 4/4 [00:00<00:00,  6.47it/s](Epoch 6) LOSS:0.9305: 100%|██████████| 4/4 [00:00<00:00,  6.76it/s]
+INFO - 06/14/22 20:31:33 - 0:04:25 - Finish training epoch 6. loss: 0.9305
+INFO - 06/14/22 20:31:33 - 0:04:25 - ============== Evaluate epoch 6 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:09<00:28,  9.50s/it]100%|██████████| 4/4 [00:09<00:00,  1.82s/it]100%|██████████| 4/4 [00:09<00:00,  2.40s/it]
+INFO - 06/14/22 20:31:43 - 0:04:35 - Evaluate on Train Set. Prec: 24.1026 Recall: 31.3333 F1: 27.2464 F1_index: 61.4493 . 
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 省份. Prec: 61.1111 Recall: 88.0000 F1: 72.1311
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 地市. Prec: 5.6604 Recall: 10.7143 F1: 7.4074
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 区县. Prec: 9.6154 Recall: 13.5135 F1: 11.2360
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 乡镇街道. Prec: 7.1429 Recall: 7.6923 F1: 7.4074
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 行政村或社区. Prec: 9.0909 Recall: 9.0909 F1: 9.0909
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 房屋编号. Prec: 15.0000 Recall: 23.0769 F1: 18.1818
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 路名. Prec: 25.9259 Recall: 31.8182 F1: 28.5714
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 兴趣点. Prec: 19.1176 Recall: 30.9524 F1: 23.6364
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 路号. Prec: 68.4211 Recall: 96.2963 F1: 80.0000
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 楼层号. Prec: 30.0000 Recall: 37.5000 F1: 33.3333
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 单元号. Prec: 14.2857 Recall: 16.6667 F1: 15.3846
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Type 开发区. Prec: 25.0000 Recall: 20.0000 F1: 22.2222
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Index B. Prec: 84.7458 Recall: 50.0000 F1: 62.8931
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Index I. Prec: 80.8910 Recall: 97.0464 F1: 88.2353
+INFO - 06/14/22 20:31:43 - 0:04:35 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:31:43 - 0:04:35 - ============== Evaluate epoch 6 on Dev Set ==============
+INFO - 06/14/22 20:31:43 - 0:04:35 - ============== Evaluate epoch 6 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:29<2:02:18, 29.47s/it]  2%|▏         | 4/250 [00:29<22:58,  5.60s/it]    3%|▎         | 7/250 [00:29<10:36,  2.62s/it]  4%|▍         | 10/250 [00:29<05:59,  1.50s/it]  6%|▌         | 14/250 [00:29<03:16,  1.20it/s]  7%|▋         | 18/250 [00:30<02:00,  1.93it/s]  9%|▉         | 22/250 [00:30<01:17,  2.93it/s] 10%|█         | 26/250 [00:30<00:52,  4.26it/s] 12%|█▏        | 30/250 [00:30<00:36,  6.00it/s] 14%|█▎        | 34/250 [00:30<00:26,  8.21it/s] 15%|█▌        | 38/250 [00:30<00:19, 10.86it/s] 17%|█▋        | 42/250 [00:30<00:14, 13.92it/s] 18%|█▊        | 46/250 [00:30<00:11, 17.26it/s] 20%|██        | 50/250 [00:30<00:09, 20.71it/s] 22%|██▏       | 54/250 [00:31<00:08, 24.15it/s] 24%|██▎       | 59/250 [00:31<00:06, 29.10it/s] 26%|██▌       | 64/250 [00:31<00:05, 32.82it/s] 28%|██▊       | 69/250 [00:31<00:05, 35.29it/s] 30%|██▉       | 74/250 [00:31<00:04, 38.13it/s] 32%|███▏      | 79/250 [00:31<00:04, 40.19it/s] 34%|███▎      | 84/250 [00:31<00:04, 40.84it/s] 36%|███▌      | 89/250 [00:31<00:03, 41.36it/s] 38%|███▊      | 94/250 [00:31<00:03, 42.05it/s] 40%|███▉      | 99/250 [00:32<00:03, 43.37it/s] 42%|████▏     | 104/250 [00:32<00:03, 43.78it/s] 44%|████▎     | 109/250 [00:32<00:03, 44.59it/s] 46%|████▌     | 114/250 [00:32<00:03, 41.76it/s] 48%|████▊     | 119/250 [00:32<00:03, 34.83it/s] 49%|████▉     | 123/250 [00:32<00:03, 34.96it/s] 51%|█████     | 127/250 [00:32<00:03, 34.28it/s] 52%|█████▏    | 131/250 [00:32<00:03, 34.65it/s] 54%|█████▍    | 135/250 [00:33<00:03, 35.09it/s] 56%|█████▌    | 139/250 [00:33<00:03, 35.58it/s] 57%|█████▋    | 143/250 [00:33<00:02, 36.12it/s] 59%|█████▉    | 147/250 [00:33<00:02, 36.66it/s] 61%|██████    | 152/250 [00:33<00:02, 38.70it/s] 63%|██████▎   | 157/250 [00:33<00:02, 40.70it/s] 65%|██████▍   | 162/250 [00:33<00:02, 42.70it/s] 67%|██████▋   | 167/250 [00:33<00:01, 42.72it/s] 69%|██████▉   | 172/250 [00:33<00:01, 42.25it/s] 71%|███████   | 177/250 [00:34<00:01, 43.39it/s] 73%|███████▎  | 182/250 [00:34<00:01, 42.77it/s] 75%|███████▍  | 187/250 [00:34<00:01, 42.61it/s] 77%|███████▋  | 192/250 [00:34<00:01, 42.49it/s] 79%|███████▉  | 197/250 [00:34<00:01, 43.92it/s] 81%|████████  | 202/250 [00:34<00:01, 44.01it/s] 83%|████████▎ | 207/250 [00:34<00:01, 42.84it/s] 85%|████████▍ | 212/250 [00:34<00:00, 38.04it/s] 86%|████████▋ | 216/250 [00:35<00:01, 32.81it/s] 88%|████████▊ | 220/250 [00:35<00:00, 31.80it/s] 90%|████████▉ | 224/250 [00:35<00:00, 32.80it/s] 91%|█████████ | 228/250 [00:35<00:00, 30.75it/s] 93%|█████████▎| 232/250 [00:35<00:00, 26.72it/s] 94%|█████████▍| 235/250 [00:35<00:00, 26.71it/s] 96%|█████████▌| 239/250 [00:35<00:00, 27.76it/s] 97%|█████████▋| 243/250 [00:36<00:00, 29.37it/s] 99%|█████████▉| 247/250 [00:36<00:00, 28.67it/s]100%|██████████| 250/250 [00:36<00:00, 28.46it/s]100%|██████████| 250/250 [00:36<00:00,  6.89it/s]
+INFO - 06/14/22 20:32:20 - 0:05:11 - Evaluate on Test Set. Prec: 15.5138 Recall: 19.5826 F1: 17.3123 F1_index: 56.8327 . 
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 乡镇街道. Prec: 2.7626 Recall: 3.5429 F1: 3.1045
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 兴趣点. Prec: 11.3478 Recall: 17.8678 F1: 13.8803
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 路名. Prec: 12.0398 Recall: 19.9769 F1: 15.0246
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 路号. Prec: 57.1607 Recall: 88.3526 F1: 69.4135
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 房屋编号. Prec: 7.0101 Recall: 7.6147 F1: 7.2999
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 区县. Prec: 8.1971 Recall: 10.7776 F1: 9.3119
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 开发区. Prec: 0.3984 Recall: 0.1961 F1: 0.2628
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 地市. Prec: 9.9157 Recall: 11.6883 F1: 10.7293
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 楼层号. Prec: 4.3796 Recall: 4.9587 F1: 4.6512
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 省份. Prec: 30.0221 Recall: 47.9355 F1: 36.9207
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 行政村或社区. Prec: 1.5957 Recall: 0.9259 F1: 1.1719
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 单元号. Prec: 1.9048 Recall: 1.1331 F1: 1.4210
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Index B. Prec: 83.8113 Recall: 42.9799 F1: 56.8210
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Index I. Prec: 78.6400 Recall: 97.1063 F1: 86.9030
+INFO - 06/14/22 20:32:20 - 0:05:11 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:20 - 0:05:11 - Found better model!!
+INFO - 06/14/22 20:32:20 - 0:05:11 - ============== epoch 7 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 7) LOSS:0.8622:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 7) LOSS:0.8622:  25%|██▌       | 1/4 [00:00<00:00,  9.76it/s](Epoch 7) LOSS:0.9086:  25%|██▌       | 1/4 [00:00<00:00,  9.76it/s](Epoch 7) LOSS:0.9086:  50%|█████     | 2/4 [00:00<00:00,  8.17it/s](Epoch 7) LOSS:0.8682:  50%|█████     | 2/4 [00:00<00:00,  8.17it/s](Epoch 7) LOSS:0.8682:  75%|███████▌  | 3/4 [00:00<00:00,  7.09it/s](Epoch 7) LOSS:0.8408:  75%|███████▌  | 3/4 [00:00<00:00,  7.09it/s](Epoch 7) LOSS:0.8408: 100%|██████████| 4/4 [00:00<00:00,  6.94it/s](Epoch 7) LOSS:0.8408: 100%|██████████| 4/4 [00:00<00:00,  7.26it/s]
+INFO - 06/14/22 20:32:20 - 0:05:12 - Finish training epoch 7. loss: 0.8408
+INFO - 06/14/22 20:32:20 - 0:05:12 - ============== Evaluate epoch 7 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:19<00:58, 19.55s/it]100%|██████████| 4/4 [00:19<00:00,  4.91s/it]
+INFO - 06/14/22 20:32:40 - 0:05:32 - Evaluate on Train Set. Prec: 25.5000 Recall: 34.0000 F1: 29.1429 F1_index: 64.8571 . 
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 省份. Prec: 75.8621 Recall: 88.0000 F1: 81.4815
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 地市. Prec: 9.4340 Recall: 17.8571 F1: 12.3457
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 区县. Prec: 29.2683 Recall: 32.4324 F1: 30.7692
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 乡镇街道. Prec: 13.0435 Recall: 23.0769 F1: 16.6667
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 路名. Prec: 16.3934 Recall: 22.7273 F1: 19.0476
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 兴趣点. Prec: 20.5128 Recall: 38.0952 F1: 26.6667
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 房屋编号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 单元号. Prec: 21.4286 Recall: 50.0000 F1: 30.0000
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 路号. Prec: 63.4146 Recall: 96.2963 F1: 76.4706
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 楼层号. Prec: 25.0000 Recall: 12.5000 F1: 16.6667
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 行政村或社区. Prec: 10.0000 Recall: 9.0909 F1: 9.5238
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Index B. Prec: 80.7339 Recall: 58.6667 F1: 67.9537
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Index I. Prec: 83.6207 Recall: 95.4993 F1: 89.1661
+INFO - 06/14/22 20:32:40 - 0:05:32 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:40 - 0:05:32 - ============== Evaluate epoch 7 on Dev Set ==============
+INFO - 06/14/22 20:32:40 - 0:05:32 - ============== Evaluate epoch 7 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:09<39:22,  9.49s/it]  2%|▏         | 5/250 [00:09<05:52,  1.44s/it]  4%|▎         | 9/250 [00:09<02:39,  1.51it/s]  5%|▌         | 13/250 [00:09<01:30,  2.61it/s]  7%|▋         | 17/250 [00:09<00:57,  4.07it/s]  8%|▊         | 21/250 [00:10<00:38,  5.94it/s] 10%|█         | 25/250 [00:10<00:27,  8.29it/s] 12%|█▏        | 29/250 [00:10<00:19, 11.09it/s] 14%|█▎        | 34/250 [00:10<00:14, 15.37it/s] 16%|█▌        | 39/250 [00:10<00:10, 19.67it/s] 18%|█▊        | 44/250 [00:10<00:08, 24.04it/s] 20%|█▉        | 49/250 [00:10<00:07, 28.04it/s] 22%|██▏       | 54/250 [00:10<00:06, 31.34it/s] 24%|██▎       | 59/250 [00:10<00:05, 33.87it/s] 26%|██▌       | 64/250 [00:11<00:05, 36.50it/s] 28%|██▊       | 69/250 [00:11<00:04, 38.35it/s] 30%|██▉       | 74/250 [00:11<00:04, 40.94it/s] 32%|███▏      | 79/250 [00:11<00:04, 40.38it/s] 34%|███▎      | 84/250 [00:11<00:04, 36.46it/s] 35%|███▌      | 88/250 [00:11<00:04, 35.39it/s] 37%|███▋      | 92/250 [00:11<00:04, 36.48it/s] 38%|███▊      | 96/250 [00:11<00:04, 36.83it/s] 40%|████      | 100/250 [00:12<00:04, 37.17it/s] 42%|████▏     | 105/250 [00:12<00:03, 38.44it/s] 44%|████▍     | 110/250 [00:12<00:03, 38.69it/s] 46%|████▌     | 114/250 [00:12<00:03, 38.79it/s] 47%|████▋     | 118/250 [00:12<00:03, 38.52it/s] 49%|████▉     | 122/250 [00:12<00:03, 38.02it/s] 50%|█████     | 126/250 [00:12<00:03, 36.83it/s] 52%|█████▏    | 131/250 [00:12<00:03, 38.09it/s] 54%|█████▍    | 136/250 [00:12<00:02, 38.89it/s] 56%|█████▋    | 141/250 [00:13<00:02, 40.77it/s] 58%|█████▊    | 146/250 [00:13<00:02, 42.37it/s] 60%|██████    | 151/250 [00:13<00:02, 42.41it/s] 62%|██████▏   | 156/250 [00:13<00:02, 42.06it/s] 64%|██████▍   | 161/250 [00:13<00:02, 42.31it/s] 66%|██████▋   | 166/250 [00:13<00:01, 42.15it/s] 68%|██████▊   | 171/250 [00:13<00:01, 40.04it/s] 70%|███████   | 176/250 [00:13<00:01, 39.18it/s] 72%|███████▏  | 180/250 [00:14<00:01, 38.81it/s] 74%|███████▍  | 185/250 [00:14<00:01, 40.06it/s] 76%|███████▌  | 190/250 [00:14<00:01, 40.32it/s] 78%|███████▊  | 195/250 [00:14<00:01, 40.87it/s] 80%|████████  | 200/250 [00:14<00:01, 41.25it/s] 82%|████████▏ | 205/250 [00:14<00:01, 39.74it/s] 84%|████████▎ | 209/250 [00:14<00:01, 37.73it/s] 85%|████████▌ | 213/250 [00:14<00:01, 33.57it/s] 87%|████████▋ | 217/250 [00:15<00:01, 29.54it/s] 88%|████████▊ | 221/250 [00:15<00:01, 28.62it/s] 90%|████████▉ | 224/250 [00:15<00:00, 28.44it/s] 91%|█████████ | 227/250 [00:15<00:00, 28.17it/s] 92%|█████████▏| 230/250 [00:15<00:00, 24.74it/s] 93%|█████████▎| 233/250 [00:15<00:00, 25.67it/s] 95%|█████████▍| 237/250 [00:15<00:00, 27.05it/s] 96%|█████████▌| 240/250 [00:15<00:00, 27.66it/s] 97%|█████████▋| 243/250 [00:16<00:00, 27.91it/s] 98%|█████████▊| 246/250 [00:16<00:00, 26.53it/s]100%|█████████▉| 249/250 [00:16<00:00, 26.05it/s]100%|██████████| 250/250 [00:16<00:00, 15.32it/s]
+INFO - 06/14/22 20:32:57 - 0:05:49 - Evaluate on Test Set. Prec: 17.3036 Recall: 22.1133 F1: 19.4150 F1_index: 59.6183 . 
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 乡镇街道. Prec: 4.2603 Recall: 8.1337 F1: 5.5918
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 兴趣点. Prec: 8.6789 Recall: 15.7091 F1: 11.1807
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 路名. Prec: 11.7750 Recall: 20.6685 F1: 15.0028
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 路号. Prec: 56.3352 Recall: 90.4118 F1: 69.4170
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 子兴趣点. Prec: 0.3759 Recall: 0.0923 F1: 0.1483
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 房屋编号. Prec: 2.3136 Recall: 1.6514 F1: 1.9272
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 区县. Prec: 14.6384 Recall: 16.9850 F1: 15.7247
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 开发区. Prec: 4.5455 Recall: 0.1961 F1: 0.3759
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 地市. Prec: 21.3800 Recall: 24.0260 F1: 22.6259
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 楼层号. Prec: 3.0075 Recall: 0.8264 F1: 1.2966
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 省份. Prec: 39.1142 Recall: 47.5831 F1: 42.9350
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 行政村或社区. Prec: 1.0949 Recall: 0.4630 F1: 0.6508
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 单元号. Prec: 7.2682 Recall: 16.4306 F1: 10.0782
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Index B. Prec: 77.2863 Recall: 49.5214 F1: 60.3643
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Index I. Prec: 80.2075 Recall: 94.7910 F1: 86.8916
+INFO - 06/14/22 20:32:57 - 0:05:49 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:32:57 - 0:05:49 - Found better model!!
+INFO - 06/14/22 20:32:57 - 0:05:49 - ============== epoch 8 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 8) LOSS:0.7562:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 8) LOSS:0.7940:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 8) LOSS:0.7940:  50%|█████     | 2/4 [00:00<00:00, 10.13it/s](Epoch 8) LOSS:0.8060:  50%|█████     | 2/4 [00:00<00:00, 10.13it/s](Epoch 8) LOSS:0.8173:  50%|█████     | 2/4 [00:00<00:00, 10.13it/s](Epoch 8) LOSS:0.8173: 100%|██████████| 4/4 [00:00<00:00,  8.11it/s](Epoch 8) LOSS:0.8173: 100%|██████████| 4/4 [00:00<00:00,  8.35it/s]
+INFO - 06/14/22 20:32:57 - 0:05:49 - Finish training epoch 8. loss: 0.8173
+INFO - 06/14/22 20:32:57 - 0:05:49 - ============== Evaluate epoch 8 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:09<00:28,  9.45s/it]100%|██████████| 4/4 [00:09<00:00,  2.38s/it]
+INFO - 06/14/22 20:33:07 - 0:05:59 - Evaluate on Train Set. Prec: 35.6083 Recall: 40.0000 F1: 37.6766 F1_index: 68.7598 . 
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 地市. Prec: 37.8378 Recall: 50.0000 F1: 43.0769
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 区县. Prec: 27.9070 Recall: 32.4324 F1: 30.0000
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 兴趣点. Prec: 25.4545 Recall: 33.3333 F1: 28.8660
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 房屋编号. Prec: 33.3333 Recall: 7.6923 F1: 12.5000
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 乡镇街道. Prec: 24.3902 Recall: 38.4615 F1: 29.8507
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 行政村或社区. Prec: 20.0000 Recall: 18.1818 F1: 19.0476
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 路名. Prec: 25.9259 Recall: 31.8182 F1: 28.5714
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 路号. Prec: 59.0909 Recall: 96.2963 F1: 73.2394
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 省份. Prec: 73.3333 Recall: 88.0000 F1: 80.0000
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 单元号. Prec: 23.5294 Recall: 66.6667 F1: 34.7826
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 楼层号. Prec: 33.3333 Recall: 12.5000 F1: 18.1818
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Index B. Prec: 93.7888 Recall: 50.3333 F1: 65.5098
+INFO - 06/14/22 20:33:07 - 0:05:59 - Entity Index I. Prec: 81.3579 Recall: 99.4374 F1: 89.4937
+INFO - 06/14/22 20:33:07 - 0:05:59 - ============== Evaluate epoch 8 on Dev Set ==============
+INFO - 06/14/22 20:33:07 - 0:05:59 - ============== Evaluate epoch 8 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:09<39:54,  9.62s/it]  2%|▏         | 5/250 [00:09<05:57,  1.46s/it]  4%|▎         | 9/250 [00:09<02:42,  1.49it/s]  5%|▌         | 13/250 [00:09<01:32,  2.57it/s]  7%|▋         | 17/250 [00:10<00:58,  4.01it/s]  8%|▊         | 21/250 [00:10<00:39,  5.87it/s] 10%|█         | 25/250 [00:10<00:27,  8.17it/s] 12%|█▏        | 29/250 [00:10<00:20, 10.99it/s] 14%|█▎        | 34/250 [00:10<00:14, 15.19it/s] 16%|█▌        | 39/250 [00:10<00:10, 19.55it/s] 18%|█▊        | 44/250 [00:10<00:08, 24.16it/s] 20%|█▉        | 49/250 [00:10<00:07, 28.37it/s] 22%|██▏       | 54/250 [00:10<00:06, 31.59it/s] 24%|██▎       | 59/250 [00:11<00:05, 34.27it/s] 26%|██▌       | 64/250 [00:11<00:04, 37.62it/s] 28%|██▊       | 69/250 [00:11<00:04, 38.92it/s] 30%|██▉       | 74/250 [00:11<00:04, 40.79it/s] 32%|███▏      | 79/250 [00:11<00:04, 42.17it/s] 34%|███▎      | 84/250 [00:11<00:03, 42.36it/s] 36%|███▌      | 89/250 [00:11<00:03, 42.49it/s] 38%|███▊      | 94/250 [00:11<00:03, 43.50it/s] 40%|███▉      | 99/250 [00:11<00:03, 44.43it/s] 42%|████▏     | 104/250 [00:12<00:03, 44.50it/s] 44%|████▎     | 109/250 [00:12<00:03, 44.89it/s] 46%|████▌     | 114/250 [00:12<00:02, 45.50it/s] 48%|████▊     | 119/250 [00:12<00:02, 45.37it/s] 50%|████▉     | 124/250 [00:12<00:03, 41.87it/s] 52%|█████▏    | 129/250 [00:12<00:02, 43.47it/s] 54%|█████▎    | 134/250 [00:12<00:02, 43.98it/s] 56%|█████▌    | 139/250 [00:12<00:02, 42.83it/s] 58%|█████▊    | 144/250 [00:12<00:02, 43.58it/s] 60%|█████▉    | 149/250 [00:13<00:02, 44.73it/s] 62%|██████▏   | 154/250 [00:13<00:02, 44.68it/s] 64%|██████▎   | 159/250 [00:13<00:02, 44.32it/s] 66%|██████▌   | 164/250 [00:13<00:01, 44.83it/s] 68%|██████▊   | 169/250 [00:13<00:01, 45.32it/s] 70%|██████▉   | 174/250 [00:13<00:01, 43.89it/s] 72%|███████▏  | 179/250 [00:13<00:01, 42.63it/s] 74%|███████▎  | 184/250 [00:13<00:01, 43.92it/s] 76%|███████▌  | 189/250 [00:14<00:01, 43.59it/s] 78%|███████▊  | 194/250 [00:14<00:01, 43.44it/s] 80%|███████▉  | 199/250 [00:14<00:01, 42.44it/s] 82%|████████▏ | 204/250 [00:14<00:01, 41.26it/s] 84%|████████▎ | 209/250 [00:14<00:01, 38.64it/s] 85%|████████▌ | 213/250 [00:14<00:01, 34.73it/s] 87%|████████▋ | 217/250 [00:14<00:01, 29.67it/s] 88%|████████▊ | 221/250 [00:15<00:01, 28.47it/s] 90%|████████▉ | 224/250 [00:15<00:00, 28.16it/s] 91%|█████████ | 227/250 [00:15<00:00, 28.00it/s] 92%|█████████▏| 230/250 [00:15<00:00, 25.10it/s] 93%|█████████▎| 233/250 [00:15<00:00, 25.63it/s] 94%|█████████▍| 236/250 [00:15<00:00, 25.72it/s] 96%|█████████▌| 239/250 [00:15<00:00, 25.98it/s] 97%|█████████▋| 242/250 [00:15<00:00, 24.30it/s] 98%|█████████▊| 245/250 [00:16<00:00, 23.93it/s] 99%|█████████▉| 248/250 [00:16<00:00, 24.20it/s]100%|██████████| 250/250 [00:16<00:00, 15.44it/s]
+INFO - 06/14/22 20:33:24 - 0:06:16 - Evaluate on Test Set. Prec: 19.4134 Recall: 23.3319 F1: 21.1930 F1_index: 60.3516 . 
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 乡镇街道. Prec: 5.1493 Recall: 9.9800 F1: 6.7935
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 兴趣点. Prec: 10.5461 Recall: 15.8419 F1: 12.6626
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 路名. Prec: 14.0413 Recall: 23.0119 F1: 17.4407
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 路号. Prec: 48.5777 Recall: 85.7143 F1: 62.0112
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 房屋编号. Prec: 1.6598 Recall: 0.3670 F1: 0.6011
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 区县. Prec: 15.7774 Recall: 16.4393 F1: 16.1016
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 地市. Prec: 29.8981 Recall: 29.1444 F1: 29.5164
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 楼层号. Prec: 7.6923 Recall: 1.0331 F1: 1.8215
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 省份. Prec: 33.2771 Recall: 49.6979 F1: 39.8627
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 行政村或社区. Prec: 2.4831 Recall: 1.6975 F1: 2.0165
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 单元号. Prec: 13.6273 Recall: 38.5269 F1: 20.1332
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 路口. Prec: 25.0000 Recall: 1.3333 F1: 2.5316
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Index B. Prec: 86.7772 Recall: 41.0608 F1: 55.7447
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Index I. Prec: 78.2464 Recall: 97.9052 F1: 86.9788
+INFO - 06/14/22 20:33:24 - 0:06:16 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:24 - 0:06:16 - Found better model!!
+INFO - 06/14/22 20:33:24 - 0:06:16 - ============== epoch 9 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 9) LOSS:0.8819:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 9) LOSS:0.8819:  25%|██▌       | 1/4 [00:00<00:00,  7.56it/s](Epoch 9) LOSS:0.7908:  25%|██▌       | 1/4 [00:00<00:00,  7.56it/s](Epoch 9) LOSS:0.7908:  50%|█████     | 2/4 [00:00<00:00,  7.42it/s](Epoch 9) LOSS:0.7566:  50%|█████     | 2/4 [00:00<00:00,  7.42it/s](Epoch 9) LOSS:0.7566:  75%|███████▌  | 3/4 [00:00<00:00,  7.51it/s](Epoch 9) LOSS:0.7916:  75%|███████▌  | 3/4 [00:00<00:00,  7.51it/s](Epoch 9) LOSS:0.7916: 100%|██████████| 4/4 [00:00<00:00,  7.16it/s](Epoch 9) LOSS:0.7916: 100%|██████████| 4/4 [00:00<00:00,  7.28it/s]
+INFO - 06/14/22 20:33:25 - 0:06:16 - Finish training epoch 9. loss: 0.7916
+INFO - 06/14/22 20:33:25 - 0:06:16 - ============== Evaluate epoch 9 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:29<01:28, 29.53s/it]100%|██████████| 4/4 [00:29<00:00,  7.40s/it]
+INFO - 06/14/22 20:33:54 - 0:06:46 - Evaluate on Train Set. Prec: 42.8994 Recall: 48.3333 F1: 45.4545 F1_index: 73.3542 . 
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 省份. Prec: 78.5714 Recall: 88.0000 F1: 83.0189
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 区县. Prec: 41.3043 Recall: 51.3514 F1: 45.7831
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 乡镇街道. Prec: 31.5789 Recall: 46.1538 F1: 37.5000
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 路名. Prec: 43.1818 Recall: 43.1818 F1: 43.1818
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 路号. Prec: 61.9048 Recall: 96.2963 F1: 75.3623
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 兴趣点. Prec: 27.7778 Recall: 35.7143 F1: 31.2500
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 房屋编号. Prec: 50.0000 Recall: 23.0769 F1: 31.5789
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 单元号. Prec: 16.6667 Recall: 50.0000 F1: 25.0000
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 地市. Prec: 50.0000 Recall: 60.7143 F1: 54.8387
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 行政村或社区. Prec: 66.6667 Recall: 72.7273 F1: 69.5652
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Type 开发区. Prec: 20.0000 Recall: 20.0000 F1: 20.0000
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Index B. Prec: 94.7059 Recall: 53.6667 F1: 68.5106
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Index I. Prec: 82.2093 Recall: 99.4374 F1: 90.0064
+INFO - 06/14/22 20:33:54 - 0:06:46 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:33:54 - 0:06:46 - ============== Evaluate epoch 9 on Dev Set ==============
+INFO - 06/14/22 20:33:54 - 0:06:46 - ============== Evaluate epoch 9 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:29<2:02:43, 29.57s/it]  2%|▏         | 5/250 [00:29<18:05,  4.43s/it]    4%|▎         | 9/250 [00:29<08:05,  2.01s/it]  5%|▌         | 13/250 [00:29<04:30,  1.14s/it]  7%|▋         | 17/250 [00:30<02:45,  1.41it/s]  8%|▊         | 21/250 [00:30<01:47,  2.14it/s] 10%|█         | 25/250 [00:30<01:11,  3.13it/s] 12%|█▏        | 29/250 [00:30<00:49,  4.45it/s] 14%|█▎        | 34/250 [00:30<00:32,  6.63it/s] 16%|█▌        | 39/250 [00:30<00:22,  9.42it/s] 18%|█▊        | 44/250 [00:30<00:16, 12.62it/s] 20%|█▉        | 49/250 [00:30<00:12, 16.38it/s] 22%|██▏       | 54/250 [00:30<00:09, 20.47it/s] 24%|██▎       | 59/250 [00:31<00:07, 24.19it/s] 26%|██▌       | 64/250 [00:31<00:06, 28.13it/s] 28%|██▊       | 69/250 [00:31<00:05, 31.84it/s] 30%|██▉       | 74/250 [00:31<00:05, 35.07it/s] 32%|███▏      | 79/250 [00:31<00:04, 37.31it/s] 34%|███▎      | 84/250 [00:31<00:04, 38.36it/s] 36%|███▌      | 89/250 [00:31<00:03, 40.87it/s] 38%|███▊      | 94/250 [00:31<00:03, 42.05it/s] 40%|███▉      | 99/250 [00:31<00:03, 41.71it/s] 42%|████▏     | 104/250 [00:32<00:03, 43.13it/s] 44%|████▎     | 109/250 [00:32<00:03, 44.56it/s] 46%|████▌     | 114/250 [00:32<00:03, 43.80it/s] 48%|████▊     | 119/250 [00:32<00:03, 43.46it/s] 50%|████▉     | 124/250 [00:32<00:02, 42.39it/s] 52%|█████▏    | 129/250 [00:32<00:02, 43.39it/s] 54%|█████▎    | 134/250 [00:32<00:02, 42.88it/s] 56%|█████▌    | 139/250 [00:32<00:02, 43.00it/s] 58%|█████▊    | 144/250 [00:32<00:02, 44.46it/s] 60%|█████▉    | 149/250 [00:33<00:02, 44.79it/s] 62%|██████▏   | 154/250 [00:33<00:02, 43.65it/s] 64%|██████▎   | 159/250 [00:33<00:02, 44.50it/s] 66%|██████▌   | 164/250 [00:33<00:01, 44.46it/s] 68%|██████▊   | 169/250 [00:33<00:01, 43.88it/s] 70%|██████▉   | 174/250 [00:33<00:01, 43.24it/s] 72%|███████▏  | 179/250 [00:33<00:01, 43.49it/s] 74%|███████▎  | 184/250 [00:33<00:01, 43.05it/s] 76%|███████▌  | 189/250 [00:33<00:01, 42.35it/s] 78%|███████▊  | 194/250 [00:34<00:01, 42.81it/s] 80%|███████▉  | 199/250 [00:34<00:01, 44.27it/s] 82%|████████▏ | 204/250 [00:34<00:01, 43.60it/s] 84%|████████▎ | 209/250 [00:34<00:01, 40.65it/s] 86%|████████▌ | 214/250 [00:34<00:01, 35.79it/s] 87%|████████▋ | 218/250 [00:34<00:00, 32.52it/s] 89%|████████▉ | 222/250 [00:34<00:00, 31.82it/s] 90%|█████████ | 226/250 [00:35<00:00, 30.92it/s] 92%|█████████▏| 230/250 [00:35<00:00, 28.20it/s] 94%|█████████▎| 234/250 [00:35<00:00, 28.58it/s] 95%|█████████▌| 238/250 [00:35<00:00, 30.00it/s] 97%|█████████▋| 242/250 [00:35<00:00, 29.87it/s] 98%|█████████▊| 246/250 [00:35<00:00, 28.31it/s]100%|██████████| 250/250 [00:35<00:00, 28.79it/s]100%|██████████| 250/250 [00:35<00:00,  6.96it/s]
+INFO - 06/14/22 20:34:31 - 0:07:22 - Evaluate on Test Set. Prec: 21.2581 Recall: 26.1148 F1: 23.4375 F1_index: 61.5291 . 
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 乡镇街道. Prec: 5.6440 Recall: 11.6766 F1: 7.6098
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 兴趣点. Prec: 11.5149 Recall: 17.4693 F1: 13.8805
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 路名. Prec: 15.4146 Recall: 24.2797 F1: 18.8572
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 路号. Prec: 54.5490 Recall: 90.6692 F1: 68.1170
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 子兴趣点. Prec: 0.9259 Recall: 0.0923 F1: 0.1679
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 房屋编号. Prec: 8.1218 Recall: 2.9358 F1: 4.3127
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 区县. Prec: 18.4028 Recall: 19.8840 F1: 19.1148
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 地市. Prec: 38.0025 Recall: 35.0267 F1: 36.4540
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 楼层号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 省份. Prec: 40.9369 Recall: 50.6042 F1: 45.2601
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 行政村或社区. Prec: 8.3582 Recall: 12.9630 F1: 10.1633
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 单元号. Prec: 17.9739 Recall: 46.7422 F1: 25.9638
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 路口. Prec: 14.2857 Recall: 6.6667 F1: 9.0909
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Index B. Prec: 85.6914 Recall: 45.0203 F1: 59.0284
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Index I. Prec: 79.2591 Recall: 97.4584 F1: 87.4216
+INFO - 06/14/22 20:34:31 - 0:07:22 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:34:31 - 0:07:22 - Found better model!!
+INFO - 06/14/22 20:34:31 - 0:07:22 - ============== epoch 10 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 10) LOSS:0.7224:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 10) LOSS:0.7224:  25%|██▌       | 1/4 [00:00<00:00,  9.13it/s](Epoch 10) LOSS:0.6408:  25%|██▌       | 1/4 [00:00<00:00,  9.13it/s](Epoch 10) LOSS:0.6408:  50%|█████     | 2/4 [00:00<00:00,  7.94it/s](Epoch 10) LOSS:0.7096:  50%|█████     | 2/4 [00:00<00:00,  7.94it/s](Epoch 10) LOSS:0.7096:  75%|███████▌  | 3/4 [00:00<00:00,  7.25it/s](Epoch 10) LOSS:0.6709:  75%|███████▌  | 3/4 [00:00<00:00,  7.25it/s](Epoch 10) LOSS:0.6709: 100%|██████████| 4/4 [00:00<00:00,  7.14it/s](Epoch 10) LOSS:0.6709: 100%|██████████| 4/4 [00:00<00:00,  7.37it/s]
+INFO - 06/14/22 20:34:31 - 0:07:23 - Finish training epoch 10. loss: 0.6709
+INFO - 06/14/22 20:34:31 - 0:07:23 - ============== Evaluate epoch 10 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:29<01:28, 29.47s/it]100%|██████████| 4/4 [00:29<00:00,  7.39s/it]
+INFO - 06/14/22 20:35:01 - 0:07:52 - Evaluate on Train Set. Prec: 35.1275 Recall: 41.3333 F1: 37.9786 F1_index: 69.5253 . 
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 区县. Prec: 13.2075 Recall: 18.9189 F1: 15.5556
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 乡镇街道. Prec: 16.2162 Recall: 23.0769 F1: 19.0476
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 兴趣点. Prec: 27.1186 Recall: 38.0952 F1: 31.6832
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 房屋编号. Prec: 25.0000 Recall: 7.6923 F1: 11.7647
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 单元号. Prec: 25.0000 Recall: 16.6667 F1: 20.0000
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 地市. Prec: 36.8421 Recall: 50.0000 F1: 42.4242
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 行政村或社区. Prec: 50.0000 Recall: 54.5455 F1: 52.1739
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 路名. Prec: 34.6939 Recall: 38.6364 F1: 36.5591
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 路号. Prec: 55.3191 Recall: 96.2963 F1: 70.2703
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 开发区. Prec: 22.2222 Recall: 40.0000 F1: 28.5714
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 省份. Prec: 85.7143 Recall: 96.0000 F1: 90.5660
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 楼层号. Prec: 80.0000 Recall: 50.0000 F1: 61.5385
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Index B. Prec: 88.3408 Recall: 65.6667 F1: 75.3346
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Index I. Prec: 85.8736 Recall: 97.4684 F1: 91.3043
+INFO - 06/14/22 20:35:01 - 0:07:52 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:01 - 0:07:52 - ============== Evaluate epoch 10 on Dev Set ==============
+INFO - 06/14/22 20:35:01 - 0:07:52 - ============== Evaluate epoch 10 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:19<1:21:08, 19.55s/it]  2%|▏         | 5/250 [00:19<11:59,  2.93s/it]    4%|▎         | 9/250 [00:19<05:23,  1.34s/it]  5%|▌         | 13/250 [00:19<03:01,  1.31it/s]  7%|▋         | 17/250 [00:20<01:52,  2.07it/s]  8%|▊         | 21/250 [00:20<01:13,  3.11it/s] 10%|█         | 25/250 [00:20<00:50,  4.50it/s] 12%|█▏        | 29/250 [00:20<00:35,  6.31it/s] 13%|█▎        | 33/250 [00:20<00:25,  8.60it/s] 15%|█▍        | 37/250 [00:20<00:18, 11.30it/s] 16%|█▋        | 41/250 [00:20<00:14, 14.26it/s] 18%|█▊        | 45/250 [00:20<00:11, 17.57it/s] 20%|██        | 50/250 [00:20<00:09, 22.19it/s] 22%|██▏       | 55/250 [00:21<00:07, 26.30it/s] 24%|██▍       | 60/250 [00:21<00:06, 30.06it/s] 26%|██▌       | 65/250 [00:21<00:05, 33.41it/s] 28%|██▊       | 70/250 [00:21<00:05, 35.51it/s] 30%|███       | 75/250 [00:21<00:04, 37.94it/s] 32%|███▏      | 80/250 [00:21<00:04, 38.83it/s] 34%|███▍      | 85/250 [00:21<00:04, 38.48it/s] 36%|███▌      | 90/250 [00:21<00:04, 39.85it/s] 38%|███▊      | 95/250 [00:21<00:03, 41.43it/s] 40%|████      | 100/250 [00:22<00:03, 41.61it/s] 42%|████▏     | 105/250 [00:22<00:03, 42.71it/s] 44%|████▍     | 110/250 [00:22<00:03, 42.47it/s] 46%|████▌     | 115/250 [00:22<00:03, 43.01it/s] 48%|████▊     | 120/250 [00:22<00:03, 43.00it/s] 50%|█████     | 125/250 [00:22<00:03, 41.12it/s] 52%|█████▏    | 130/250 [00:22<00:02, 42.18it/s] 54%|█████▍    | 135/250 [00:22<00:02, 42.14it/s] 56%|█████▌    | 140/250 [00:23<00:02, 42.30it/s] 58%|█████▊    | 145/250 [00:23<00:02, 43.17it/s] 60%|██████    | 150/250 [00:23<00:02, 43.00it/s] 62%|██████▏   | 155/250 [00:23<00:02, 42.44it/s] 64%|██████▍   | 160/250 [00:23<00:02, 42.28it/s] 66%|██████▌   | 165/250 [00:23<00:02, 42.28it/s] 68%|██████▊   | 170/250 [00:23<00:01, 41.60it/s] 70%|███████   | 175/250 [00:23<00:01, 41.08it/s] 72%|███████▏  | 180/250 [00:23<00:01, 39.67it/s] 74%|███████▍  | 185/250 [00:24<00:01, 40.10it/s] 76%|███████▌  | 190/250 [00:24<00:01, 41.21it/s] 78%|███████▊  | 195/250 [00:24<00:01, 41.84it/s] 80%|████████  | 200/250 [00:24<00:01, 41.84it/s] 82%|████████▏ | 205/250 [00:24<00:01, 40.56it/s] 84%|████████▍ | 210/250 [00:24<00:01, 38.14it/s] 86%|████████▌ | 214/250 [00:24<00:01, 32.18it/s] 87%|████████▋ | 218/250 [00:25<00:01, 29.55it/s] 89%|████████▉ | 222/250 [00:25<00:00, 29.67it/s] 90%|█████████ | 226/250 [00:25<00:00, 29.05it/s] 92%|█████████▏| 229/250 [00:25<00:00, 26.71it/s] 93%|█████████▎| 232/250 [00:25<00:00, 25.85it/s] 94%|█████████▍| 235/250 [00:25<00:00, 25.81it/s] 95%|█████████▌| 238/250 [00:25<00:00, 26.54it/s] 96%|█████████▋| 241/250 [00:26<00:00, 25.20it/s] 98%|█████████▊| 244/250 [00:26<00:00, 23.83it/s] 99%|█████████▉| 247/250 [00:26<00:00, 23.63it/s]100%|██████████| 250/250 [00:26<00:00, 24.65it/s]100%|██████████| 250/250 [00:26<00:00,  9.48it/s]
+INFO - 06/14/22 20:35:28 - 0:08:20 - Evaluate on Test Set. Prec: 17.9443 Recall: 23.5747 F1: 20.3778 F1_index: 60.9799 . 
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 乡镇街道. Prec: 4.2882 Recall: 9.6806 F1: 5.9436
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 兴趣点. Prec: 7.8284 Recall: 13.5171 F1: 9.9147
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 路名. Prec: 16.8148 Recall: 25.4322 F1: 20.2446
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 路号. Prec: 48.7255 Recall: 95.9459 F1: 64.6294
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 子兴趣点. Prec: 1.2658 Recall: 0.0923 F1: 0.1721
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 房屋编号. Prec: 5.0228 Recall: 1.0092 F1: 1.6807
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 区县. Prec: 8.0030 Recall: 10.9482 F1: 9.2467
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 开发区. Prec: 0.1015 Recall: 0.1961 F1: 0.1338
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 地市. Prec: 27.8409 Recall: 29.9465 F1: 28.8554
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 楼层号. Prec: 20.5714 Recall: 7.4380 F1: 10.9256
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 省份. Prec: 47.8014 Recall: 50.9063 F1: 49.3050
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 行政村或社区. Prec: 12.3894 Recall: 15.1235 F1: 13.6206
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 单元号. Prec: 14.0244 Recall: 6.5156 F1: 8.8975
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 路口. Prec: 16.9811 Recall: 12.0000 F1: 14.0625
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Index B. Prec: 74.7010 Recall: 55.9882 F1: 64.0049
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Index I. Prec: 81.7543 Recall: 92.9360 F1: 86.9873
+INFO - 06/14/22 20:35:28 - 0:08:20 - Entity Index O. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:28 - 0:08:20 - No better model found (1/8)
+INFO - 06/14/22 20:35:28 - 0:08:20 - ============== epoch 11 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 11) LOSS:0.7421:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 11) LOSS:0.7421:  25%|██▌       | 1/4 [00:00<00:00,  9.20it/s](Epoch 11) LOSS:0.7009:  25%|██▌       | 1/4 [00:00<00:00,  9.20it/s](Epoch 11) LOSS:0.7009:  50%|█████     | 2/4 [00:00<00:00,  8.25it/s](Epoch 11) LOSS:0.6824:  50%|█████     | 2/4 [00:00<00:00,  8.25it/s](Epoch 11) LOSS:0.6824:  75%|███████▌  | 3/4 [00:00<00:00,  7.78it/s](Epoch 11) LOSS:0.7024:  75%|███████▌  | 3/4 [00:00<00:00,  7.78it/s](Epoch 11) LOSS:0.7024: 100%|██████████| 4/4 [00:00<00:00,  7.57it/s](Epoch 11) LOSS:0.7024: 100%|██████████| 4/4 [00:00<00:00,  7.79it/s]
+INFO - 06/14/22 20:35:28 - 0:08:20 - Finish training epoch 11. loss: 0.7024
+INFO - 06/14/22 20:35:28 - 0:08:20 - ============== Evaluate epoch 11 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:09<00:28,  9.52s/it]100%|██████████| 4/4 [00:09<00:00,  2.40s/it]
+INFO - 06/14/22 20:35:38 - 0:08:30 - Evaluate on Train Set. Prec: 43.3803 Recall: 51.3333 F1: 47.0229 F1_index: 74.8092 . 
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 区县. Prec: 40.0000 Recall: 48.6486 F1: 43.9024
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 路名. Prec: 40.0000 Recall: 45.4545 F1: 42.5532
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 路号. Prec: 63.4146 Recall: 96.2963 F1: 76.4706
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 兴趣点. Prec: 30.6452 Recall: 45.2381 F1: 36.5385
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 省份. Prec: 92.5926 Recall: 100.0000 F1: 96.1538
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 地市. Prec: 44.4444 Recall: 57.1429 F1: 50.0000
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 乡镇街道. Prec: 24.4444 Recall: 42.3077 F1: 30.9859
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 开发区. Prec: 16.6667 Recall: 20.0000 F1: 18.1818
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 路口. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 行政村或社区. Prec: 80.0000 Recall: 72.7273 F1: 76.1905
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 房屋编号. Prec: 45.4545 Recall: 38.4615 F1: 41.6667
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 单元号. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 楼层号. Prec: 55.5556 Recall: 62.5000 F1: 58.8235
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Index B. Prec: 88.8889 Recall: 66.6667 F1: 76.1905
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Index I. Prec: 86.1940 Recall: 97.4684 F1: 91.4851
+INFO - 06/14/22 20:35:38 - 0:08:30 - Entity Index O. Prec: 100.0000 Recall: 5.2632 F1: 10.0000
+INFO - 06/14/22 20:35:38 - 0:08:30 - ============== Evaluate epoch 11 on Dev Set ==============
+INFO - 06/14/22 20:35:38 - 0:08:30 - ============== Evaluate epoch 11 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:09<39:16,  9.46s/it]  2%|▏         | 5/250 [00:09<05:51,  1.43s/it]  4%|▎         | 9/250 [00:09<02:39,  1.51it/s]  5%|▌         | 13/250 [00:09<01:30,  2.61it/s]  7%|▋         | 17/250 [00:09<00:57,  4.07it/s]  8%|▊         | 21/250 [00:10<00:38,  5.96it/s] 10%|█         | 25/250 [00:10<00:27,  8.31it/s] 12%|█▏        | 29/250 [00:10<00:19, 11.07it/s] 14%|█▎        | 34/250 [00:10<00:14, 15.19it/s] 16%|█▌        | 39/250 [00:10<00:10, 19.53it/s] 18%|█▊        | 44/250 [00:10<00:08, 23.63it/s] 20%|█▉        | 49/250 [00:10<00:07, 27.72it/s] 22%|██▏       | 54/250 [00:10<00:06, 30.55it/s] 24%|██▎       | 59/250 [00:10<00:05, 32.84it/s] 26%|██▌       | 64/250 [00:11<00:05, 35.64it/s] 28%|██▊       | 69/250 [00:11<00:04, 37.36it/s] 30%|██▉       | 74/250 [00:11<00:04, 39.32it/s] 32%|███▏      | 79/250 [00:11<00:04, 39.76it/s] 34%|███▎      | 84/250 [00:11<00:04, 39.65it/s] 36%|███▌      | 89/250 [00:11<00:04, 39.76it/s] 38%|███▊      | 94/250 [00:11<00:03, 40.83it/s] 40%|███▉      | 99/250 [00:11<00:03, 40.38it/s] 42%|████▏     | 104/250 [00:12<00:03, 41.01it/s] 44%|████▎     | 109/250 [00:12<00:03, 42.33it/s] 46%|████▌     | 114/250 [00:12<00:03, 42.71it/s] 48%|████▊     | 119/250 [00:12<00:03, 43.20it/s] 50%|████▉     | 124/250 [00:12<00:03, 40.93it/s] 52%|█████▏    | 129/250 [00:12<00:02, 41.58it/s] 54%|█████▎    | 134/250 [00:12<00:02, 41.20it/s] 56%|█████▌    | 139/250 [00:12<00:02, 41.00it/s] 58%|█████▊    | 144/250 [00:12<00:02, 41.85it/s] 60%|█████▉    | 149/250 [00:13<00:02, 42.42it/s] 62%|██████▏   | 154/250 [00:13<00:02, 42.82it/s] 64%|██████▎   | 159/250 [00:13<00:02, 43.59it/s] 66%|██████▌   | 164/250 [00:13<00:02, 42.98it/s] 68%|██████▊   | 169/250 [00:13<00:01, 41.93it/s] 70%|██████▉   | 174/250 [00:13<00:01, 40.67it/s] 72%|███████▏  | 179/250 [00:13<00:01, 38.63it/s] 73%|███████▎  | 183/250 [00:13<00:01, 38.66it/s] 75%|███████▍  | 187/250 [00:14<00:01, 38.82it/s] 77%|███████▋  | 192/250 [00:14<00:01, 39.87it/s] 79%|███████▉  | 197/250 [00:14<00:01, 40.34it/s] 81%|████████  | 202/250 [00:14<00:01, 40.47it/s] 83%|████████▎ | 207/250 [00:14<00:01, 40.52it/s] 85%|████████▍ | 212/250 [00:14<00:01, 34.84it/s] 86%|████████▋ | 216/250 [00:14<00:01, 30.39it/s] 88%|████████▊ | 220/250 [00:15<00:01, 29.28it/s] 90%|████████▉ | 224/250 [00:15<00:00, 29.02it/s] 91%|█████████ | 227/250 [00:15<00:00, 28.26it/s] 92%|█████████▏| 230/250 [00:15<00:00, 25.23it/s] 93%|█████████▎| 233/250 [00:15<00:00, 25.77it/s] 94%|█████████▍| 236/250 [00:15<00:00, 26.01it/s] 96%|█████████▌| 239/250 [00:15<00:00, 25.96it/s] 97%|█████████▋| 242/250 [00:15<00:00, 26.31it/s] 98%|█████████▊| 245/250 [00:16<00:00, 27.17it/s] 99%|█████████▉| 248/250 [00:16<00:00, 26.61it/s]100%|██████████| 250/250 [00:16<00:00, 15.42it/s]
+INFO - 06/14/22 20:35:55 - 0:08:47 - Evaluate on Test Set. Prec: 19.0518 Recall: 25.0875 F1: 21.6570 F1_index: 62.3269 . 
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 乡镇街道. Prec: 6.1275 Recall: 16.2176 F1: 8.8944
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 兴趣点. Prec: 9.5545 Recall: 17.7350 F1: 12.4186
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 路名. Prec: 14.1828 Recall: 24.9712 F1: 18.0907
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 路号. Prec: 53.8938 Recall: 89.5109 F1: 67.2793
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 子兴趣点. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 房屋编号. Prec: 8.4890 Recall: 4.5872 F1: 5.9559
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 区县. Prec: 15.7303 Recall: 16.7121 F1: 16.2064
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 开发区. Prec: 0.1802 Recall: 0.1961 F1: 0.1878
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 地市. Prec: 30.0654 Recall: 26.3560 F1: 28.0887
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 楼层号. Prec: 20.3160 Recall: 18.5950 F1: 19.4175
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 省份. Prec: 47.6744 Recall: 51.6113 F1: 49.5648
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 行政村或社区. Prec: 15.4294 Recall: 16.3580 F1: 15.8801
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 单元号. Prec: 7.5145 Recall: 3.6827 F1: 4.9430
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 路口. Prec: 11.9403 Recall: 10.6667 F1: 11.2676
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Index B. Prec: 76.1938 Recall: 56.9221 F1: 65.1629
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Index I. Prec: 82.0945 Recall: 93.4022 F1: 87.3841
+INFO - 06/14/22 20:35:55 - 0:08:47 - Entity Index O. Prec: 100.0000 Recall: 0.1172 F1: 0.2342
+INFO - 06/14/22 20:35:55 - 0:08:47 - No better model found (2/8)
+INFO - 06/14/22 20:35:55 - 0:08:47 - ============== epoch 12 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 12) LOSS:0.5377:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 12) LOSS:0.5377:  25%|██▌       | 1/4 [00:00<00:00,  9.22it/s](Epoch 12) LOSS:0.6173:  25%|██▌       | 1/4 [00:00<00:00,  9.22it/s](Epoch 12) LOSS:0.6173:  50%|█████     | 2/4 [00:00<00:00,  8.41it/s](Epoch 12) LOSS:0.6044:  50%|█████     | 2/4 [00:00<00:00,  8.41it/s](Epoch 12) LOSS:0.6044:  75%|███████▌  | 3/4 [00:00<00:00,  7.90it/s](Epoch 12) LOSS:0.5622:  75%|███████▌  | 3/4 [00:00<00:00,  7.90it/s](Epoch 12) LOSS:0.5622: 100%|██████████| 4/4 [00:00<00:00,  7.72it/s](Epoch 12) LOSS:0.5622: 100%|██████████| 4/4 [00:00<00:00,  7.93it/s]
+INFO - 06/14/22 20:35:55 - 0:08:47 - Finish training epoch 12. loss: 0.5622
+INFO - 06/14/22 20:35:55 - 0:08:47 - ============== Evaluate epoch 12 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:09<00:28,  9.51s/it]100%|██████████| 4/4 [00:09<00:00,  2.40s/it]
+INFO - 06/14/22 20:36:05 - 0:08:57 - Evaluate on Train Set. Prec: 49.2837 Recall: 57.3333 F1: 53.0046 F1_index: 77.6579 . 
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 省份. Prec: 92.5926 Recall: 100.0000 F1: 96.1538
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 地市. Prec: 51.2821 Recall: 71.4286 F1: 59.7015
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 区县. Prec: 48.7805 Recall: 54.0541 F1: 51.2821
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 乡镇街道. Prec: 32.6087 Recall: 57.6923 F1: 41.6667
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 路名. Prec: 52.2727 Recall: 52.2727 F1: 52.2727
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 路号. Prec: 66.6667 Recall: 96.2963 F1: 78.7879
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 兴趣点. Prec: 39.2157 Recall: 47.6190 F1: 43.0108
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 行政村或社区. Prec: 72.7273 Recall: 72.7273 F1: 72.7273
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 房屋编号. Prec: 50.0000 Recall: 38.4615 F1: 43.4783
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 单元号. Prec: 22.2222 Recall: 33.3333 F1: 26.6667
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 楼层号. Prec: 38.4615 Recall: 62.5000 F1: 47.6190
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 路口. Prec: 20.0000 Recall: 20.0000 F1: 20.0000
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 子兴趣点. Prec: 22.2222 Recall: 25.0000 F1: 23.5294
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Index B. Prec: 92.2018 Recall: 67.0000 F1: 77.6062
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Index I. Prec: 86.3861 Recall: 98.1716 F1: 91.9026
+INFO - 06/14/22 20:36:05 - 0:08:57 - Entity Index O. Prec: 100.0000 Recall: 21.0526 F1: 34.7826
+INFO - 06/14/22 20:36:05 - 0:08:57 - ============== Evaluate epoch 12 on Dev Set ==============
+INFO - 06/14/22 20:36:05 - 0:08:57 - ============== Evaluate epoch 12 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:19<1:21:00, 19.52s/it]  2%|▏         | 5/250 [00:19<11:58,  2.93s/it]    4%|▎         | 9/250 [00:19<05:22,  1.34s/it]  6%|▌         | 14/250 [00:19<02:42,  1.45it/s]  8%|▊         | 19/250 [00:19<01:35,  2.42it/s] 10%|▉         | 24/250 [00:20<01:00,  3.71it/s] 11%|█         | 28/250 [00:20<00:43,  5.08it/s] 13%|█▎        | 33/250 [00:20<00:29,  7.30it/s] 15%|█▌        | 38/250 [00:20<00:20, 10.14it/s] 17%|█▋        | 43/250 [00:20<00:15, 13.33it/s] 19%|█▉        | 48/250 [00:20<00:11, 16.95it/s] 21%|██        | 53/250 [00:20<00:09, 20.50it/s] 23%|██▎       | 58/250 [00:20<00:07, 24.04it/s] 25%|██▌       | 63/250 [00:21<00:06, 27.70it/s] 27%|██▋       | 68/250 [00:21<00:05, 30.82it/s] 29%|██▉       | 73/250 [00:21<00:05, 34.49it/s] 31%|███       | 78/250 [00:21<00:04, 36.66it/s] 33%|███▎      | 83/250 [00:21<00:04, 37.09it/s] 35%|███▌      | 88/250 [00:21<00:04, 36.85it/s] 37%|███▋      | 93/250 [00:21<00:04, 38.70it/s] 39%|███▉      | 98/250 [00:21<00:03, 39.24it/s] 41%|████      | 103/250 [00:22<00:03, 40.88it/s] 43%|████▎     | 108/250 [00:22<00:03, 42.23it/s] 45%|████▌     | 113/250 [00:22<00:03, 42.06it/s] 47%|████▋     | 118/250 [00:22<00:03, 41.88it/s] 49%|████▉     | 123/250 [00:22<00:03, 41.45it/s] 51%|█████     | 128/250 [00:22<00:02, 40.75it/s] 53%|█████▎    | 133/250 [00:22<00:02, 41.06it/s] 55%|█████▌    | 138/250 [00:22<00:02, 40.99it/s] 57%|█████▋    | 143/250 [00:22<00:02, 42.63it/s] 59%|█████▉    | 148/250 [00:23<00:02, 42.77it/s] 61%|██████    | 153/250 [00:23<00:02, 42.12it/s] 63%|██████▎   | 158/250 [00:23<00:02, 42.22it/s] 65%|██████▌   | 163/250 [00:23<00:02, 42.14it/s] 67%|██████▋   | 168/250 [00:23<00:01, 41.71it/s] 69%|██████▉   | 173/250 [00:23<00:01, 41.23it/s] 71%|███████   | 178/250 [00:23<00:01, 39.97it/s] 73%|███████▎  | 183/250 [00:23<00:01, 40.38it/s] 75%|███████▌  | 188/250 [00:24<00:01, 41.06it/s] 77%|███████▋  | 193/250 [00:24<00:01, 41.87it/s] 79%|███████▉  | 198/250 [00:24<00:01, 41.58it/s] 81%|████████  | 203/250 [00:24<00:01, 41.07it/s] 83%|████████▎ | 208/250 [00:24<00:01, 40.25it/s] 85%|████████▌ | 213/250 [00:24<00:01, 32.65it/s] 87%|████████▋ | 217/250 [00:24<00:01, 29.74it/s] 88%|████████▊ | 221/250 [00:25<00:00, 29.15it/s] 90%|█████████ | 225/250 [00:25<00:00, 29.29it/s] 92%|█████████▏| 229/250 [00:25<00:00, 26.46it/s] 93%|█████████▎| 232/250 [00:25<00:00, 26.09it/s] 94%|█████████▍| 235/250 [00:25<00:00, 26.68it/s] 95%|█████████▌| 238/250 [00:25<00:00, 26.92it/s] 96%|█████████▋| 241/250 [00:25<00:00, 25.77it/s] 98%|█████████▊| 244/250 [00:26<00:00, 25.90it/s] 99%|█████████▉| 247/250 [00:26<00:00, 25.89it/s]100%|██████████| 250/250 [00:26<00:00, 26.44it/s]100%|██████████| 250/250 [00:26<00:00,  9.53it/s]
+INFO - 06/14/22 20:36:32 - 0:09:23 - Evaluate on Test Set. Prec: 20.1795 Recall: 26.4510 F1: 22.8935 F1_index: 62.7197 . 
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 乡镇街道. Prec: 5.3887 Recall: 17.0160 F1: 8.1853
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 兴趣点. Prec: 11.0961 Recall: 16.3733 F1: 13.2278
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 路名. Prec: 17.5633 Recall: 27.9677 F1: 21.5768
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 路号. Prec: 56.4946 Recall: 87.3230 F1: 68.6047
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 子兴趣点. Prec: 0.7067 Recall: 0.1847 F1: 0.2928
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 房屋编号. Prec: 9.5159 Recall: 5.2294 F1: 6.7496
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 区县. Prec: 18.7853 Recall: 18.1446 F1: 18.4594
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 开发区. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 地市. Prec: 33.2314 Recall: 33.1933 F1: 33.2123
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 楼层号. Prec: 17.0487 Recall: 24.5868 F1: 20.1354
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 省份. Prec: 48.5163 Recall: 51.8630 F1: 50.1339
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 行政村或社区. Prec: 14.1919 Recall: 16.6667 F1: 15.3300
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 单元号. Prec: 4.7619 Recall: 6.2323 F1: 5.3988
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 路口. Prec: 8.8608 Recall: 9.3333 F1: 9.0909
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Index B. Prec: 78.0364 Recall: 56.0396 F1: 65.2336
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Index I. Prec: 81.8918 Recall: 94.1314 F1: 87.5861
+INFO - 06/14/22 20:36:32 - 0:09:23 - Entity Index O. Prec: 100.0000 Recall: 0.9379 F1: 1.8583
+INFO - 06/14/22 20:36:32 - 0:09:23 - No better model found (3/8)
+INFO - 06/14/22 20:36:32 - 0:09:23 - ============== epoch 13 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 13) LOSS:0.5352:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 13) LOSS:0.5352:  25%|██▌       | 1/4 [00:00<00:00,  8.22it/s](Epoch 13) LOSS:0.5510:  25%|██▌       | 1/4 [00:00<00:00,  8.22it/s](Epoch 13) LOSS:0.5510:  50%|█████     | 2/4 [00:00<00:00,  8.61it/s](Epoch 13) LOSS:0.5628:  50%|█████     | 2/4 [00:00<00:00,  8.61it/s](Epoch 13) LOSS:0.5628:  75%|███████▌  | 3/4 [00:00<00:00,  9.03it/s](Epoch 13) LOSS:0.5726:  75%|███████▌  | 3/4 [00:00<00:00,  9.03it/s](Epoch 13) LOSS:0.5726: 100%|██████████| 4/4 [00:00<00:00,  8.55it/s](Epoch 13) LOSS:0.5726: 100%|██████████| 4/4 [00:00<00:00,  8.60it/s]
+INFO - 06/14/22 20:36:32 - 0:09:24 - Finish training epoch 13. loss: 0.5726
+INFO - 06/14/22 20:36:32 - 0:09:24 - ============== Evaluate epoch 13 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s] 25%|██▌       | 1/4 [00:19<00:58, 19.45s/it]100%|██████████| 4/4 [00:19<00:00,  4.88s/it]
+INFO - 06/14/22 20:36:52 - 0:09:43 - Evaluate on Train Set. Prec: 53.4328 Recall: 59.6667 F1: 56.3780 F1_index: 80.0000 . 
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 地市. Prec: 58.9744 Recall: 82.1429 F1: 68.6567
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 区县. Prec: 51.2195 Recall: 56.7568 F1: 53.8462
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 路名. Prec: 52.1739 Recall: 54.5455 F1: 53.3333
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 路号. Prec: 66.6667 Recall: 96.2963 F1: 78.7879
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 兴趣点. Prec: 35.1852 Recall: 45.2381 F1: 39.5833
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 子兴趣点. Prec: 20.0000 Recall: 12.5000 F1: 15.3846
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 省份. Prec: 92.5926 Recall: 100.0000 F1: 96.1538
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 乡镇街道. Prec: 44.4444 Recall: 61.5385 F1: 51.6129
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 开发区. Prec: 40.0000 Recall: 40.0000 F1: 40.0000
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 楼层号. Prec: 40.0000 Recall: 50.0000 F1: 44.4444
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 路口. Prec: 40.0000 Recall: 40.0000 F1: 40.0000
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 行政村或社区. Prec: 80.0000 Recall: 72.7273 F1: 76.1905
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 房屋编号. Prec: 66.6667 Recall: 30.7692 F1: 42.1053
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Type 单元号. Prec: 33.3333 Recall: 66.6667 F1: 44.4444
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Index B. Prec: 92.0354 Recall: 69.3333 F1: 79.0875
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Index I. Prec: 87.1250 Recall: 98.0309 F1: 92.2568
+INFO - 06/14/22 20:36:52 - 0:09:43 - Entity Index O. Prec: 100.0000 Recall: 21.0526 F1: 34.7826
+INFO - 06/14/22 20:36:52 - 0:09:44 - ============== Evaluate epoch 13 on Dev Set ==============
+INFO - 06/14/22 20:36:52 - 0:09:44 - ============== Evaluate epoch 13 on Test Set ==============
+  0%|          | 0/250 [00:00<?, ?it/s]  0%|          | 1/250 [00:09<39:23,  9.49s/it]  2%|▏         | 5/250 [00:09<05:52,  1.44s/it]  4%|▎         | 9/250 [00:09<02:39,  1.51it/s]  6%|▌         | 14/250 [00:09<01:21,  2.88it/s]  7%|▋         | 18/250 [00:09<00:53,  4.33it/s]  9%|▉         | 22/250 [00:10<00:36,  6.19it/s] 10%|█         | 26/250 [00:10<00:26,  8.52it/s] 12%|█▏        | 30/250 [00:10<00:19, 11.28it/s] 14%|█▎        | 34/250 [00:10<00:14, 14.48it/s] 16%|█▌        | 39/250 [00:10<00:10, 19.19it/s] 17%|█▋        | 43/250 [00:10<00:09, 22.58it/s] 19%|█▉        | 48/250 [00:10<00:07, 26.78it/s] 21%|██        | 53/250 [00:10<00:06, 30.92it/s] 23%|██▎       | 58/250 [00:10<00:05, 33.53it/s] 25%|██▌       | 63/250 [00:11<00:05, 36.02it/s] 27%|██▋       | 68/250 [00:11<00:04, 36.97it/s] 29%|██▉       | 73/250 [00:11<00:04, 38.94it/s] 31%|███       | 78/250 [00:11<00:04, 41.08it/s] 33%|███▎      | 83/250 [00:11<00:04, 40.46it/s] 35%|███▌      | 88/250 [00:11<00:04, 40.00it/s] 37%|███▋      | 93/250 [00:11<00:03, 40.56it/s] 39%|███▉      | 98/250 [00:11<00:03, 40.56it/s] 41%|████      | 103/250 [00:12<00:03, 41.35it/s] 43%|████▎     | 108/250 [00:12<00:03, 41.66it/s] 45%|████▌     | 113/250 [00:12<00:03, 43.04it/s] 47%|████▋     | 118/250 [00:12<00:03, 43.80it/s] 49%|████▉     | 123/250 [00:12<00:02, 42.84it/s] 51%|█████     | 128/250 [00:12<00:02, 42.04it/s] 53%|█████▎    | 133/250 [00:12<00:02, 41.47it/s] 55%|█████▌    | 138/250 [00:12<00:02, 40.56it/s] 57%|█████▋    | 143/250 [00:12<00:02, 41.79it/s] 59%|█████▉    | 148/250 [00:13<00:02, 41.49it/s] 61%|██████    | 153/250 [00:13<00:02, 40.83it/s] 63%|██████▎   | 158/250 [00:13<00:02, 41.53it/s] 65%|██████▌   | 163/250 [00:13<00:02, 40.76it/s] 67%|██████▋   | 168/250 [00:13<00:02, 34.29it/s] 69%|██████▉   | 172/250 [00:13<00:02, 33.31it/s] 70%|███████   | 176/250 [00:13<00:02, 31.44it/s] 72%|███████▏  | 180/250 [00:14<00:02, 32.44it/s] 74%|███████▎  | 184/250 [00:14<00:02, 30.15it/s] 75%|███████▌  | 188/250 [00:14<00:02, 30.33it/s] 77%|███████▋  | 192/250 [00:14<00:01, 31.06it/s] 78%|███████▊  | 196/250 [00:14<00:01, 31.72it/s] 80%|████████  | 200/250 [00:14<00:01, 33.45it/s] 82%|████████▏ | 204/250 [00:14<00:01, 34.22it/s] 83%|████████▎ | 208/250 [00:14<00:01, 34.66it/s] 85%|████████▍ | 212/250 [00:15<00:01, 30.27it/s] 86%|████████▋ | 216/250 [00:15<00:01, 25.19it/s] 88%|████████▊ | 219/250 [00:15<00:01, 24.59it/s] 89%|████████▉ | 222/250 [00:15<00:01, 24.85it/s] 90%|█████████ | 225/250 [00:15<00:01, 24.25it/s] 91%|█████████ | 228/250 [00:15<00:00, 24.79it/s] 92%|█████████▏| 231/250 [00:15<00:00, 22.22it/s] 94%|█████████▎| 234/250 [00:16<00:00, 23.34it/s] 95%|█████████▍| 237/250 [00:16<00:00, 24.67it/s] 96%|█████████▌| 240/250 [00:16<00:00, 24.31it/s] 97%|█████████▋| 243/250 [00:16<00:00, 25.39it/s] 98%|█████████▊| 246/250 [00:16<00:00, 24.76it/s]100%|█████████▉| 249/250 [00:16<00:00, 24.50it/s]100%|██████████| 250/250 [00:16<00:00, 14.98it/s]
+INFO - 06/14/22 20:37:09 - 0:10:01 - Evaluate on Test Set. Prec: 21.2498 Recall: 26.4369 F1: 23.5612 F1_index: 63.0436 . 
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 乡镇街道. Prec: 6.1301 Recall: 15.4691 F1: 8.7806
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 兴趣点. Prec: 9.1197 Recall: 15.3105 F1: 11.4307
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 路名. Prec: 17.2458 Recall: 25.9316 F1: 20.7151
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 路号. Prec: 53.9848 Recall: 86.7439 F1: 66.5515
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 方位. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 子兴趣点. Prec: 1.4925 Recall: 0.0923 F1: 0.1739
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 房屋编号. Prec: 11.1111 Recall: 4.4954 F1: 6.4010
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 区县. Prec: 20.7541 Recall: 20.0887 F1: 20.4159
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 开发区. Prec: 0.4367 Recall: 0.1961 F1: 0.2706
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 地市. Prec: 35.1028 Recall: 35.8671 F1: 35.4808
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 楼层号. Prec: 12.0690 Recall: 11.5702 F1: 11.8143
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 省份. Prec: 52.1541 Recall: 51.8127 F1: 51.9828
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 行政村或社区. Prec: 17.8025 Recall: 19.7531 F1: 18.7271
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 村子组别. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 单元号. Prec: 11.0063 Recall: 19.8300 F1: 14.1557
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 路口. Prec: 7.5949 Recall: 8.0000 F1: 7.7922
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type others. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Type 距离. Prec: 0.0000 Recall: 0.0000 F1: 0.0000
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Index B. Prec: 77.5046 Recall: 55.3392 F1: 64.5727
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Index I. Prec: 81.6691 Recall: 94.0018 F1: 87.4025
+INFO - 06/14/22 20:37:09 - 0:10:01 - Entity Index O. Prec: 100.0000 Recall: 1.4068 F1: 2.7746
+INFO - 06/14/22 20:37:09 - 0:10:01 - Found better model!!
+INFO - 06/14/22 20:37:09 - 0:10:01 - ============== epoch 14 ==============
+  0%|          | 0/4 [00:00<?, ?it/s](Epoch 14) LOSS:0.4928:   0%|          | 0/4 [00:00<?, ?it/s](Epoch 14) LOSS:0.4928:  25%|██▌       | 1/4 [00:00<00:00,  8.75it/s](Epoch 14) LOSS:0.4984:  25%|██▌       | 1/4 [00:00<00:00,  8.75it/s](Epoch 14) LOSS:0.4984:  50%|█████     | 2/4 [00:00<00:00,  7.75it/s](Epoch 14) LOSS:0.5457:  50%|█████     | 2/4 [00:00<00:00,  7.75it/s](Epoch 14) LOSS:0.5457:  75%|███████▌  | 3/4 [00:00<00:00,  6.83it/s](Epoch 14) LOSS:0.4918:  75%|███████▌  | 3/4 [00:00<00:00,  6.83it/s](Epoch 14) LOSS:0.4918: 100%|██████████| 4/4 [00:00<00:00,  6.97it/s](Epoch 14) LOSS:0.4918: 100%|██████████| 4/4 [00:00<00:00,  7.14it/s]
+INFO - 06/14/22 20:37:10 - 0:10:01 - Finish training epoch 14. loss: 0.4918
+INFO - 06/14/22 20:37:10 - 0:10:01 - ============== Evaluate epoch 14 on Train Set ==============
+  0%|          | 0/4 [00:00<?, ?it/s]
